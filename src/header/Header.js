@@ -5,19 +5,22 @@ const Header = () => {
     <div className="header">
       <div className="header-list">
         <a href="https://extra.ge/" className="header-list__item">
-          Home
+          მთავარი
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          Home
+          სათამაშოები
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          Home
+          ტექნიკა
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          Home
+          სახლი
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          Home
+          სპორტი
+        </a>
+        <a href="https://extra.ge/" className="header-list__item">
+          სილამაზე
         </a>
       </div>
     </div>
