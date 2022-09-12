@@ -1,0 +1,10 @@
+.header-list {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+}
+
+.header-list__item {
+    text-decoration: none;
+    color: red;
+}
