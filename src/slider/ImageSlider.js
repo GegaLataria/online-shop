@@ -4,41 +4,53 @@ import "./ImageSlider.css";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const sliderStyles = {
-    height: "100%",
-    position: "relative",
-  };
+  //   const sliderStyles = {
+  //     height: "100%",
+  //     position: "relative",
+  //   };
 
-  const slideStyles = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "10px",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
+  //   const slideStyles = {
+  //     marginTop: "50px",
+  //     width: "100%",
+  //     height: "100%",
+  //     borderRadius: "10px",
+  //     backgroundPosition: "center",
+  //     backgroundSize: "cover",
+  //     backgroundImage: `url(${slides[currentIndex].url})`,
+  //   };
 
-  const leftArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
+  //   const leftArrowStyles = {
+  //     position: "absolute",
+  //     top: "50%",
+  //     transform: "translate(0, -50%)",
+  //     left: "32px",
+  //     fontSize: "45px",
+  //     color: "#fff",
+  //     zIndex: 1,
+  //     cursor: "pointer",
+  //   };
 
-  const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
+  //   const rightArrowStyles = {
+  //     position: "absolute",
+  //     top: "50%",
+  //     transform: "translate(0, -50%)",
+  //     right: "32px",
+  //     fontSize: "45px",
+  //     color: "#fff",
+  //     zIndex: 1,
+  //     cursor: "pointer",
+  //   };
+
+  //   const dotsContainerStyles = {
+  //     display: "flex",
+  //     justifyContent: "center",
+  //   };
+
+  //   const dotStyles = {
+  //     margin: "0 3px",
+  //     cursor: "pointer",
+  //     fontSize: "20px",
+  //   };
 
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
@@ -52,15 +64,33 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
-    <div style={sliderStyles}>
-      <div style={leftArrowStyles} onClick={goToPrevious}>
+    <div className={"sliderStyles"}>
+      <div className={"leftArrowStyles"} onClick={goToPrevious}>
         ❰
       </div>
-      <div style={rightArrowStyles} onClick={goToNext}>
+      <div className={"rightArrowStyles"} onClick={goToNext}>
         ❱
       </div>
-      <div style={slideStyles}></div>
+      <div
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        className="slideStyles"
+      ></div>
+      <div className="dotsContainerStyles">
+        {slides.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            className={"dotStyles"}
+            onClick={() => goToSlide(slideIndex)}
+          >
+            •
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
