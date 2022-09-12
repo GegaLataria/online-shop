@@ -3,6 +3,7 @@ import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selected, setSelected] = useState(null);
 
   //   const sliderStyles = {
   //     height: "100%",
