@@ -1,7 +1,7 @@
 .sliderStyles {
     height: 100%;
     position: relative;
-  }
+}
 
 .slideStyles {
     margin-top: 50px;
@@ -9,9 +9,9 @@
     height: 100%;
     border-radius: 10px;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     transition: all 0.5s ease;
-  }
+}
 
 .leftArrowStyles {
     position: absolute;
@@ -22,7 +22,7 @@
     font-size: 45px;
     z-index: 1;
     cursor: pointer;
-  }
+}
 
 .rightArrowStyles {
     position: absolute;
@@ -33,15 +33,19 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
-  }
+}
 
 .dotsContainerStyles {
     display: flex;
     justify-content: center;
-  }
+}
 
 .dotStyles {
     margin: 0 3px;
     cursor: pointer;
     font-size: 40px;
-  }
+}
+
+.selectedDot {
+    color: #6f42c1;
+}

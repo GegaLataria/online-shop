@@ -16,6 +16,11 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
+  // setTimeout(()=>{
+  //   goToNext();
+  // }, 2500);
+
+
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
@@ -36,8 +41,8 @@ const ImageSlider = ({ slides }) => {
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
-            className={"dotStyles"}
-            onClick={() => goToSlide(slideIndex)}
+            className={currentIndex===slideIndex?"dotStyles selectedDot":"dotStyles"}
+            onClick={(e) => goToSlide(slideIndex)}
           >
             •
           </div>

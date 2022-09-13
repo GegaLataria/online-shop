@@ -11,8 +11,8 @@ const App = () => {
   ];
 
   const containerStyles = {
-    width: "500px",
-    height: "280px",
+    width: "80vw",
+    height: "30vw",
     margin: "0 auto",
   };
   return (
