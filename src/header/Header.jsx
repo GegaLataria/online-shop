@@ -1,4 +1,5 @@
 import "./Header.css";
+import cart from "./cart.jpg";
 
 const Header = () => {
   return (
@@ -22,6 +23,7 @@ const Header = () => {
         <a href="https://extra.ge/" className="header-list__item">
           სილამაზე
         </a>
+        <a href="https://extra.ge/" className="header-list__item header-list__cart">🛒</a>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Header from "./header/Header";
-import ImageSlider from "./slider/ImageSlider";
+import Home from "./home/Home";
 
 const App = () => {
   const slides = [
@@ -10,17 +10,10 @@ const App = () => {
     { url: "http://localhost:3000/image-5.jpg", title: "Italy" },
   ];
 
-  const containerStyles = {
-    width: "80vw",
-    height: "30vw",
-    margin: "0 auto",
-  };
   return (
     <div>
       <Header />
-      <div style={containerStyles}>
-        <ImageSlider slides={slides} />
-      </div>
+      <Home slides={slides} />
     </div>
   );
 };

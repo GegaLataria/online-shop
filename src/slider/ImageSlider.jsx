@@ -26,27 +26,29 @@ const ImageSlider = ({ slides }) => {
   };
 
   return (
-    <div className={"sliderStyles"}>
-      <div className={"leftArrowStyles"} onClick={goToPrevious}>
-        ❰
-      </div>
-      <div className={"rightArrowStyles"} onClick={goToNext}>
-        ❱
-      </div>
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="slideStyles"
-      ></div>
-      <div className="dotsContainerStyles">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            className={currentIndex===slideIndex?"dotStyles selectedDot":"dotStyles"}
-            onClick={(e) => goToSlide(slideIndex)}
-          >
-            •
-          </div>
-        ))}
+    <div className="containerStyles">
+      <div className={"sliderStyles"}>
+        <div className={"leftArrowStyles"} onClick={goToPrevious}>
+          ❰
+        </div>
+        <div className={"rightArrowStyles"} onClick={goToNext}>
+          ❱
+        </div>
+        <div
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          className="slideStyles"
+        ></div>
+        <div className="dotsContainerStyles">
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              className={currentIndex===slideIndex?"dotStyles selectedDot":"dotStyles"}
+              onClick={(e) => goToSlide(slideIndex)}
+            >
+              •
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

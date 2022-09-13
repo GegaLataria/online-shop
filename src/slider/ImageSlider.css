@@ -1,3 +1,9 @@
+.containerStyles {
+    width: 80vw;
+    height: 30vw;
+    margin: 0 auto;
+}
+
 .sliderStyles {
     height: 100%;
     position: relative;
@@ -10,7 +16,6 @@
     border-radius: 10px;
     background-position: center;
     background-size:cover;
-    transition: all 0.5s ease;
 }
 
 .leftArrowStyles {
@@ -49,3 +54,4 @@
 .selectedDot {
     color: #6f42c1;
 }
+

@@ -1,6 +1,7 @@
 .header-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #6f42c1;
     padding: 1vw 2vw;
     /* position: fixed;
@@ -12,9 +13,13 @@
 .header-list__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 
 .header-list__item:hover {
     color: red;
+}
+
+.header-list__cart {
+    font-size: 3vw;
 }
