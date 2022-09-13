@@ -3,3 +3,16 @@
     justify-content: center;
     margin-top: 5vw;
 }
+
+.home-shop-button {
+    background-color: #6f42c1;
+    color: #fff;
+    font-size: 1.7vw;
+    padding: 1.5vw 3vw;
+    border-radius: 50px;
+    border: none;
+}
+
+.home-shop-button:active {
+    background-color: blueviolet;
+}
