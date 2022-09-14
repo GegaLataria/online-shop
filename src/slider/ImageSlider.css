@@ -1,6 +1,6 @@
 .containerStyles {
-    width: 80vw;
-    height: 30vw;
+    width: 90vw;
+    height: 35vw;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .slideStyles {
-    margin-top: 50px;
+    margin-top: 2vw;
     width: 100%;
     height: 100%;
     border-radius: 10px;

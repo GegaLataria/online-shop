@@ -21,13 +21,28 @@ const Home = ({ slides }) => {
         </div>
         <div className="products-section__list">
           <div className="products-section__list__item">
-            <a href="www.sleek.ge">უთო</a>
+            <a
+              className="products-section__list__item__input"
+              href="/product/id-1"
+            >
+              უთო
+            </a>
           </div>
           <div className="products-section__list__item">
-            <a href="www.sleek.ge">გაზქურა</a>
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
           </div>
           <div className="products-section__list__item">
-            <a href="www.sleek.ge">ფენი</a>
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              ფენი
+            </a>
           </div>
           <div className="products-section__list__item">
             <a
@@ -35,6 +50,70 @@ const Home = ({ slides }) => {
               href="https://extra.ge/"
             >
               ტელეფონი
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
+            </a>
+          </div>
+          <div className="products-section__list__item">
+            <a
+              className="products-section__list__item__input"
+              href="https://extra.ge/"
+            >
+              გაზქურა
             </a>
           </div>
         </div>
