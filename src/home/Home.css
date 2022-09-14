@@ -11,8 +11,32 @@
     padding: 1.5vw 3vw;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 
 .home-shop-button:active {
     background-color: blueviolet;
+}
+
+.products-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.products-section__list {
+    margin-top: 4.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.products-section__list__item {
+    width: 30%;
+    background: rgba(110, 66, 193, 0.6);
+    padding: 1.25vw;
+    border-radius: 1.25vw;
+    margin-bottom: 1.25vw;
+    text-decoration: none;
 }
