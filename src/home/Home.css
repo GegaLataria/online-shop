@@ -24,19 +24,30 @@
 }
 
 .products-section__list {
-    margin-top: 4.4vw;
+    margin-top: 2vw;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
     text-align: center;
 }
 
 .products-section__list__item {
-    width: 30%;
+    width: 20%;
     background: rgba(110, 66, 193, 0.6);
     padding: 1.25vw;
     border-radius: 1.25vw;
     margin-bottom: 1.25vw;
     text-decoration: none;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.products-section__title {
+    font-size: 3vw;
+    border-bottom: 3px solid #6f42c1;
+    width: fit-content;
 }

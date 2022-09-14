@@ -16,7 +16,9 @@ const Home = ({ slides }) => {
         </button>
       </div>
       <div ref={ref} className="products-section">
-        <h2>პოპულარული პროდუქცია</h2>
+        <div className="title-container">
+          <h2 className="products-section__title">პოპულარული პროდუქცია</h2>
+        </div>
         <div className="products-section__list">
           <div className="products-section__list__item">
             <a href="www.sleek.ge">უთო</a>
@@ -30,7 +32,7 @@ const Home = ({ slides }) => {
           <div className="products-section__list__item">
             <a
               className="products-section__list__item__input"
-              href="www.sleek.ge"
+              href="https://extra.ge/"
             >
               ტელეფონი
             </a>
