@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-list">
-        <a href="https://extra.ge/" className="header-list__item">
+        <a href="/" className="header-list__item">
           მთავარი
         </a>
         <a href="https://extra.ge/" className="header-list__item">

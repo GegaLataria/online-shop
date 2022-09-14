@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./footer/Footer";
 import Header from "./header/Header";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
   ];
 
   const Home = lazy(() => import("./home/Home"));
+  const Product = lazy(() => import("./products/Product"));
 
   return (
     <div>
@@ -20,8 +22,10 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home slides={slides} />} />
+            <Route path="/product/id-1" element={<Product />} />
           </Routes>
         </Suspense>
+        <Footer />
       </Router>
     </div>
   );
