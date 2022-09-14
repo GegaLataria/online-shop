@@ -1,3 +1,17 @@
 .footer-list {
     display: flex;
+    justify-content: space-around;
+    background-color: rgba(110, 66, 193, .9);
+    padding: 1.5vw 3vw;
+    border-radius: .5vw;
+}
+
+.footer-list__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7vw;
+}
+
+.footer-list__item:hover {
+    color: red;
 }
