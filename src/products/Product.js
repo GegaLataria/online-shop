@@ -22,9 +22,11 @@ const Product = () => {
           <p>• დაბრუნება შესაძლებელია მიღებიდან 14 დღის განმავლობაში</p>
         </div>
       </div>
-      <h2>ფასი: 4199₾</h2>
-      <button className="shop-button">ყიდვა</button>
-      <button>კალათაში დამატება</button>
+      <div className="buttons-container">
+        <h2 className="price-tag">ფასი: 4199₾</h2>
+        <button className="shop-button">ყიდვა</button>
+        <button className="cart-button">კალათაში დამატება</button>
+      </div>
     </div>
   );
 };

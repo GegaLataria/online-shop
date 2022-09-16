@@ -21,6 +21,10 @@
     height: auto;
 }
 
+.buttons-container {
+    margin-left: 2vw;
+}
+
 .shop-button {
     background-color: #6f42c1;
     padding: 1vw 2vw;
@@ -33,4 +37,23 @@
 
 .shop-button:active {
     background-color: blueviolet;
+}
+
+.cart-button {
+    margin-left: 1.5vw;
+    background-color: rgba(110, 66, 193, .3);
+    padding: 1vw 2vw;
+    color: #6f42c1;
+    border: none;
+    border-radius: .5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.cart-button:active {
+    background-color: rgba(110, 66, 193, .5);
+}
+
+.price-tag {
+    font-size: 1.8vw;
 }
