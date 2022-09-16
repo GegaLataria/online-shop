@@ -1,4 +1,8 @@
 const Product = () => {
-  return <div>Product page</div>;
+  return (
+    <div>
+      <h2 className="product-header">Iphone 14 Pro Max</h2>
+    </div>
+  );
 };
 export default Product;
