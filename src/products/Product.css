@@ -1,4 +1,22 @@
+.product-page {
+    margin: 2vw;
+}
+
+.product-page__container {
+    display: flex;
+}
+
+.product-page__container__column {
+    flex: 50%;
+    margin-left: 2vw;
+}
+
+.product-header {
+    font-size: 2.5vw;
+    border-bottom: 1px solid blueviolet;
+}
+
 .product-image {
-    width: 40vw;
+    width: 100%;
     height: auto;
 }
