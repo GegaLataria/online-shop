@@ -20,3 +20,17 @@
     width: 100%;
     height: auto;
 }
+
+.shop-button {
+    background-color: #6f42c1;
+    padding: 1vw 2vw;
+    color: #fff;
+    border: none;
+    border-radius: .5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.shop-button:active {
+    background-color: blueviolet;
+}

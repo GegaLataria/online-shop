@@ -23,7 +23,7 @@ const Product = () => {
         </div>
       </div>
       <h2>ფასი: 4199₾</h2>
-      <button>ყიდვა</button>
+      <button className="shop-button">ყიდვა</button>
       <button>კალათაში დამატება</button>
     </div>
   );
