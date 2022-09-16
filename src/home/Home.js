@@ -25,7 +25,7 @@ const Home = ({ slides }) => {
               className="products-section__list__item__input"
               href="/product/id-1"
             >
-              უთო
+              ტელეფონი
             </a>
           </div>
           <div className="products-section__list__item">
@@ -49,7 +49,7 @@ const Home = ({ slides }) => {
               className="products-section__list__item__input"
               href="https://extra.ge/"
             >
-              ტელეფონი
+              უთო
             </a>
           </div>
           <div className="products-section__list__item">
