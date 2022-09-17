@@ -18,8 +18,7 @@ const ImageSlider = ({ slides }) => {
 
   // setTimeout(()=>{
   //   goToNext();
-  // }, 2500);
-
+  // }, 5000);
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);

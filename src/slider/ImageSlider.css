@@ -1,6 +1,6 @@
 .containerStyles {
-    width: 90vw;
-    height: 35vw;
+    width: 100vw;
+    height: 38vw;
     margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
     border-radius: 10px;
     background-position: center;
     background-size:cover;
-    transition-duration: 2s;
+    transition: 2.5s;
 }
 
 .leftArrowStyles {
