@@ -26,7 +26,7 @@ const Header = () => {
         <a href="https://extra.ge/" className="header-list__item">
           სილამაზე
         </a>
-        <a href="https://extra.ge/" className="header-list__item header-list__cart">🛒<span className="cart-items">{value.cartItems}</span></a>
+        <a href="/cart" className="header-list__item header-list__cart">🛒<span className="cart-items">{value.cartItems}</span></a>
       </div>
     </div>
   );

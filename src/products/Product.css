@@ -6,9 +6,30 @@
     display: flex;
 }
 
-.product-page__container__column {
+.product__column__small {
+    flex: 10%;
+}
+
+.product-page__container__column_photo {
     flex: 50%;
     margin-left: 2vw;
+}
+
+.product-page__container__column {
+    flex: 40%;
+    margin-left: 2vw;
+}
+
+.product-image-small {
+    border-radius: .5vw;
+    width: 150px;
+    height: auto;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+.selected-image {
+    border: 2px solid #6f42c1;
 }
 
 .product-header {

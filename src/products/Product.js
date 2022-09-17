@@ -1,20 +1,43 @@
 import iphone from "./iphone.jpg";
-import React from "react";
+import iphone2 from "./iphone-2.jpg";
+import React, { useState } from "react";
 import "./Product.css";
 import { Context } from "../App";
 const Product = () => {
+  const [selected, setSelected] = useState(iphone);
   const value = React.useContext(Context);
   const handleClick = () => {
     value.setCartItems(value.cartItems + 1);
+    window.localStorage.setItem(
+      "cartItems",
+      JSON.stringify(value.cartItems + 1)
+    );
   };
 
   return (
     <div className="product-page">
       <h2 className="product-header">Iphone 14 Pro Max</h2>
-
       <div className="product-page__container">
-        <div className="product-page__container__column">
-          <img src={iphone} alt="iphone" className="product-image"></img>
+        <div className="product__column__small">
+          <img
+            src={iphone}
+            alt="iphone"
+            className={`product-image-small ${
+              selected === iphone ? "selected-image" : ""
+            }`}
+            onClick={() => setSelected(iphone)}
+          ></img>
+          <img
+            src={iphone2}
+            alt="iphone"
+            className={`product-image-small ${
+              selected === iphone2 ? "selected-image" : ""
+            }`}
+            onClick={() => setSelected(iphone2)}
+          ></img>
+        </div>
+        <div className="product-page__container__column_photo">
+          <img src={selected} alt="iphone" className="product-image"></img>
         </div>
         <div className="product-page__container__column">
           <h3>მოკლე აღწერა:</h3>
