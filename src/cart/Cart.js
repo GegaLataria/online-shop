@@ -1,5 +1,6 @@
 import { Context } from "../App";
 import React from "react";
+import "./Cart.css";
 
 const Cart = () => {
   const value = React.useContext(Context);
@@ -10,6 +11,7 @@ const Cart = () => {
 
   return (
     <div>
+      <h2 className="cart-header">კალათა</h2>
       <button onClick={handleClick}>Clear Cart</button>
     </div>
   );
