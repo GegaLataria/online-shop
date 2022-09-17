@@ -12,7 +12,9 @@ const Cart = () => {
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
-      <button onClick={handleClick}>Clear Cart</button>
+      <button className="clear-cart-button" onClick={handleClick}>
+        Clear Cart
+      </button>
     </div>
   );
 };
