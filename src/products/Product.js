@@ -1,13 +1,20 @@
 import iphone from "./iphone.jpg";
+import React from "react";
 import "./Product.css";
+import { Context } from "../App";
 const Product = () => {
+  const value = React.useContext(Context);
+  const handleClick = () => {
+    value.setCartItems(value.cartItems + 1);
+  };
+
   return (
     <div className="product-page">
       <h2 className="product-header">Iphone 14 Pro Max</h2>
 
       <div className="product-page__container">
         <div className="product-page__container__column">
-          <img src={iphone} alt="iphone-photo" className="product-image"></img>
+          <img src={iphone} alt="iphone" className="product-image"></img>
         </div>
         <div className="product-page__container__column">
           <h3>მოკლე აღწერა:</h3>
@@ -25,7 +32,9 @@ const Product = () => {
       <div className="buttons-container">
         <h2 className="price-tag">ფასი: 4199₾</h2>
         <button className="shop-button">ყიდვა</button>
-        <button className="cart-button">კალათაში დამატება</button>
+        <button onClick={handleClick} className="cart-button">
+          კალათაში დამატება
+        </button>
       </div>
     </div>
   );

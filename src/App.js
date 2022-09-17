@@ -1,9 +1,13 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 
+export const Context = React.createContext();
+
 const App = () => {
+  const [cartItems, setCartItems] = useState(0);
+
   const slides = [
     { url: "http://localhost:3000/image-1.jpg", title: "Iphone" },
     { url: "http://localhost:3000/image-2.jpg", title: "Watch" },
@@ -18,14 +22,16 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Header />
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route path="/" element={<Home slides={slides} />} />
-            <Route path="/product/id-1" element={<Product />} />
-          </Routes>
-        </Suspense>
-        <Footer />
+        <Context.Provider value={{ cartItems, setCartItems }}>
+          <Header />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home slides={slides} />} />
+              <Route path="/product/id-1" element={<Product />} />
+            </Routes>
+          </Suspense>
+          <Footer />
+        </Context.Provider>
       </Router>
     </div>
   );

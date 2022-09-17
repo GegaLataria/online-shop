@@ -1,7 +1,10 @@
 import "./Header.css";
-import cart from "./cart.jpg";
+// import cart from "./cart.jpg";
+import React from "react";
+import { Context } from "../App";
 
 const Header = () => {
+  const value = React.useContext(Context);
   return (
     <div className="header">
       <div className="header-list">
@@ -23,7 +26,7 @@ const Header = () => {
         <a href="https://extra.ge/" className="header-list__item">
           სილამაზე
         </a>
-        <a href="https://extra.ge/" className="header-list__item header-list__cart">🛒</a>
+        <a href="https://extra.ge/" className="header-list__item header-list__cart">🛒<span className="cart-items">{value.cartItems}</span></a>
       </div>
     </div>
   );
