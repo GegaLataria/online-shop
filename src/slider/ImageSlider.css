@@ -16,6 +16,7 @@
     border-radius: 10px;
     background-position: center;
     background-size:cover;
+    transition-duration: 2s;
 }
 
 .leftArrowStyles {
