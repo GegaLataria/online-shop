@@ -5,6 +5,7 @@ import "./Product.css";
 import { Context } from "../App";
 const Product = () => {
   const [selected, setSelected] = useState(iphone);
+  const [zoomedImage, setZoomedImage] = useState(false);
   const value = React.useContext(Context);
   const handleClick = () => {
     value.setCartItems(value.cartItems + 1);
@@ -37,7 +38,18 @@ const Product = () => {
           ></img>
         </div>
         <div className="product-page__container__column_photo">
-          <img src={selected} alt="iphone" className="product-image"></img>
+          <img
+            src={selected}
+            alt="iphone"
+            className={`product-image ${zoomedImage ? "zoomed-image" : ""}`}
+            // onClick={() => setZoomedImage(true)}
+          ></img>
+          <button className="zoom-button" onClick={() => setZoomedImage(true)}>
+            +
+          </button>
+          <button className="zoom-button" onClick={() => setZoomedImage(false)}>
+            -
+          </button>
         </div>
         <div className="product-page__container__column">
           <h3>მოკლე აღწერა:</h3>

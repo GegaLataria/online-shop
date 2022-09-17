@@ -42,6 +42,11 @@
     height: auto;
 }
 
+.zoomed-image {
+    width: 70vw;
+    height: auto;
+}
+
 .buttons-container {
     margin-left: 2vw;
 }
