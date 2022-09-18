@@ -8,6 +8,7 @@ const Product = () => {
   const [selected, setSelected] = useState(iphone);
   const [zoomedImage, setZoomedImage] = useState(false);
   const value = React.useContext(Context);
+
   const handleClick = () => {
     value.setCartItems(value.cartItems + 1);
     window.localStorage.setItem(
