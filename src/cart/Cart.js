@@ -12,6 +12,11 @@ const Cart = () => {
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
+      <h2>
+        {value.cartItems
+          ? `თქვენ გაქვთ ${value.cartItems} ნივთი კალათაში`
+          : `თქვენი კალათა ცარიელია`}
+      </h2>
       <button className="clear-cart-button" onClick={handleClick}>
         Clear Cart
       </button>

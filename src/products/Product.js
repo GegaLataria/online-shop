@@ -3,6 +3,7 @@ import iphone2 from "./iphone-2.jpg";
 import React, { useState } from "react";
 import "./Product.css";
 import { Context } from "../App";
+
 const Product = () => {
   const [selected, setSelected] = useState(iphone);
   const [zoomedImage, setZoomedImage] = useState(false);
