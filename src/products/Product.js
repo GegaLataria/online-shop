@@ -3,6 +3,8 @@ import iphone2 from "./iphone-2.jpg";
 import React, { useState } from "react";
 import "./Product.css";
 import { Context } from "../App";
+import CartButton from "./CartButton";
+import BuyButton from "./BuyButton";
 
 const Product = () => {
   const [selected, setSelected] = useState(iphone);
@@ -10,17 +12,17 @@ const Product = () => {
   const value = React.useContext(Context);
   const header = "Iphone 14 Pro Max";
 
-  const handleClick = () => {
-    value.setCartItems(value.cartItems + 1);
-    window.localStorage.setItem(
-      "cartItems",
-      JSON.stringify(value.cartItems + 1)
-    );
-    window.localStorage.setItem(
-      "product",
-      JSON.stringify({ header: header, image: iphone })
-    );
-  };
+  //   const handleClick = () => {
+  //     value.setCartItems(value.cartItems + 1);
+  //     window.localStorage.setItem(
+  //       "cartItems",
+  //       JSON.stringify(value.cartItems + 1)
+  //     );
+  //     window.localStorage.setItem(
+  //       "product",
+  //       JSON.stringify({ header: header, image: iphone })
+  //     );
+  //   };
 
   return (
     <div className="product-page">
@@ -71,12 +73,10 @@ const Product = () => {
           <p>• დაბრუნება შესაძლებელია მიღებიდან 14 დღის განმავლობაში</p>
         </div>
       </div>
+      <h2 className="price-tag">ფასი: 4199₾</h2>
       <div className="buttons-container">
-        <h2 className="price-tag">ფასი: 4199₾</h2>
-        <button className="shop-button">ყიდვა</button>
-        <button onClick={handleClick} className="cart-button">
-          კალათაში დამატება
-        </button>
+        <BuyButton />
+        <CartButton header={header} iphone={iphone} />
       </div>
     </div>
   );

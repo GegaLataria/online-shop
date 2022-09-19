@@ -27,8 +27,9 @@ const Cart = () => {
       {product.image ? (
         <img src={product.image} alt="product" className="cart-image"></img>
       ) : null}
+      <br></br>
       <button className="clear-cart-button" onClick={handleClick}>
-        Clear Cart
+        კალათის გასუფთავება
       </button>
     </div>
   );

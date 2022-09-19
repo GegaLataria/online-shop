@@ -64,7 +64,8 @@
 }
 
 .buttons-container {
-    margin-left: 2vw;
+    margin-left: 2vw;    
+    display: flex;
 }
 
 .shop-button {
@@ -98,4 +99,5 @@
 
 .price-tag {
     font-size: 1.8vw;
+    margin-left: 2vw;
 }
