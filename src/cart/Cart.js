@@ -7,8 +7,13 @@ const Cart = () => {
   const handleClick = () => {
     value.setCartItems(0);
     window.localStorage.setItem("cartItems", JSON.stringify(0));
-    window.localStorage.setItem("product", JSON.stringify({}));
+    window.localStorage.setItem(
+      "product",
+      JSON.stringify({ header: null, image: null })
+    );
   };
+
+  const product = JSON.parse(localStorage.getItem("product"));
 
   return (
     <div>
@@ -18,7 +23,10 @@ const Cart = () => {
           ? `თქვენ გაქვთ ${value.cartItems} ნივთი კალათაში`
           : `თქვენი კალათა ცარიელია`}
       </h2>
-      <h2>{JSON.parse(localStorage.getItem("product")).header}</h2>
+      <h2>{product.header}</h2>
+      {product.image ? (
+        <img src={product.image} alt="product" className="cart-image"></img>
+      ) : null}
       <button className="clear-cart-button" onClick={handleClick}>
         Clear Cart
       </button>

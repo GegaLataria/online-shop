@@ -3,6 +3,11 @@
     border-bottom: 1px solid blueviolet;
 }
 
+.cart-image {
+    width: 10vw;
+    height: auto;
+}
+
 .clear-cart-button {
     background-color: #6f42c1;
     border: none;
