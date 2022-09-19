@@ -1,4 +1,4 @@
-import iphone from "./iphone.jpg";
+import image from "./iphone.jpg";
 import iphone2 from "./iphone-2.jpg";
 import React, { useState } from "react";
 import "./Product.css";
@@ -6,7 +6,7 @@ import exportedObject from "./CartButton";
 import BuyButton from "./BuyButton";
 
 const Product = () => {
-  const [selected, setSelected] = useState(iphone);
+  const [selected, setSelected] = useState(image);
   const [zoomedImage, setZoomedImage] = useState(false);
   const header = "Iphone 14 Pro Max";
   const price = "4199₾";
@@ -17,12 +17,12 @@ const Product = () => {
       <div className="product-page__container">
         <div className="product__column__small">
           <img
-            src={iphone}
+            src={image}
             alt="iphone"
             className={`product-image-small ${
-              selected === iphone ? "selected-image" : ""
+              selected === image ? "selected-image" : ""
             }`}
-            onClick={() => setSelected(iphone)}
+            onClick={() => setSelected(image)}
           ></img>
           <img
             src={iphone2}
@@ -64,7 +64,7 @@ const Product = () => {
         <BuyButton />
         <exportedObject.CartButton
           header={header}
-          iphone={iphone}
+          image={image}
           price={price}
         />
       </div>
