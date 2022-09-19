@@ -1,6 +1,7 @@
 import { Context } from "../App";
 import React from "react";
 import "./Cart.css";
+import exportedObject from "../products/CartButton";
 
 const Cart = () => {
   const value = React.useContext(Context);
@@ -28,7 +29,7 @@ const Cart = () => {
         </div>
         <div className="cart-page-container__item">
           <div className="cart-numbers-button">
-            <h2 className="cart-numbers-button__item">-</h2>
+            <h2 className="cart-numbers-button__item">—</h2>
             <h2>{value.cartItems}</h2>
             <h2 className="cart-numbers-button__item">+</h2>
           </div>

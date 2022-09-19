@@ -26,6 +26,12 @@
 .cart-numbers-button__item {
     margin-left: 1vw;
     margin-right: 1vw;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.cart-numbers-button__item:hover {
+    color: black;
 }
 
 .clear-cart-button {

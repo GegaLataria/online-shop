@@ -2,7 +2,7 @@ import iphone from "./iphone.jpg";
 import iphone2 from "./iphone-2.jpg";
 import React, { useState } from "react";
 import "./Product.css";
-import CartButton from "./CartButton";
+import exportedObject from "./CartButton";
 import BuyButton from "./BuyButton";
 
 const Product = () => {
@@ -62,7 +62,11 @@ const Product = () => {
       <h2 className="price-tag">ფასი: {price}</h2>
       <div className="buttons-container">
         <BuyButton />
-        <CartButton header={header} iphone={iphone} price={price} />
+        <exportedObject.CartButton
+          header={header}
+          iphone={iphone}
+          price={price}
+        />
       </div>
     </div>
   );
