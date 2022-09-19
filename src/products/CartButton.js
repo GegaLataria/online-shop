@@ -1,8 +1,9 @@
 import React from "react";
 import { Context } from "../App";
 
-const CartButton = ({ header, iphone }) => {
+const CartButton = ({ header, iphone, price }) => {
   const value = React.useContext(Context);
+  console.log(price);
 
   const handleClick = () => {
     value.setCartItems(value.cartItems + 1);
@@ -12,7 +13,7 @@ const CartButton = ({ header, iphone }) => {
     );
     window.localStorage.setItem(
       "product",
-      JSON.stringify({ header: header, image: iphone })
+      JSON.stringify({ header: header, image: iphone, price: price })
     );
   };
 

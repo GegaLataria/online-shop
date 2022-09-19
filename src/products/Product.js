@@ -2,27 +2,14 @@ import iphone from "./iphone.jpg";
 import iphone2 from "./iphone-2.jpg";
 import React, { useState } from "react";
 import "./Product.css";
-import { Context } from "../App";
 import CartButton from "./CartButton";
 import BuyButton from "./BuyButton";
 
 const Product = () => {
   const [selected, setSelected] = useState(iphone);
   const [zoomedImage, setZoomedImage] = useState(false);
-  const value = React.useContext(Context);
   const header = "Iphone 14 Pro Max";
-
-  //   const handleClick = () => {
-  //     value.setCartItems(value.cartItems + 1);
-  //     window.localStorage.setItem(
-  //       "cartItems",
-  //       JSON.stringify(value.cartItems + 1)
-  //     );
-  //     window.localStorage.setItem(
-  //       "product",
-  //       JSON.stringify({ header: header, image: iphone })
-  //     );
-  //   };
+  const price = "4199₾";
 
   return (
     <div className="product-page">
@@ -51,7 +38,6 @@ const Product = () => {
             src={selected}
             alt="iphone"
             className={`product-image ${zoomedImage ? "zoomed-image" : ""}`}
-            // onClick={() => setZoomedImage(true)}
           ></img>
           <button className="zoom-button" onClick={() => setZoomedImage(true)}>
             +
@@ -73,10 +59,10 @@ const Product = () => {
           <p>• დაბრუნება შესაძლებელია მიღებიდან 14 დღის განმავლობაში</p>
         </div>
       </div>
-      <h2 className="price-tag">ფასი: 4199₾</h2>
+      <h2 className="price-tag">ფასი: {price}</h2>
       <div className="buttons-container">
         <BuyButton />
-        <CartButton header={header} iphone={iphone} />
+        <CartButton header={header} iphone={iphone} price={price} />
       </div>
     </div>
   );

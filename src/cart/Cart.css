@@ -8,6 +8,26 @@
     height: auto;
 }
 
+.cart-page-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-page-container__item {
+    margin-left: 2vw;
+}
+
+.cart-numbers-button {
+    display: flex;
+    border: 1px solid #6f42c1;
+    padding: 0 1vw;
+}
+
+.cart-numbers-button__item {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 .clear-cart-button {
     background-color: #6f42c1;
     border: none;
