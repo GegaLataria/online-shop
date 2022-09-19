@@ -8,6 +8,7 @@ const Product = () => {
   const [selected, setSelected] = useState(iphone);
   const [zoomedImage, setZoomedImage] = useState(false);
   const value = React.useContext(Context);
+  const header = "Iphone 14 Pro Max";
 
   const handleClick = () => {
     value.setCartItems(value.cartItems + 1);
@@ -15,11 +16,15 @@ const Product = () => {
       "cartItems",
       JSON.stringify(value.cartItems + 1)
     );
+    window.localStorage.setItem(
+      "product",
+      JSON.stringify({ header: header, image: iphone })
+    );
   };
 
   return (
     <div className="product-page">
-      <h2 className="product-header">Iphone 14 Pro Max</h2>
+      <h2 className="product-header">{header}</h2>
       <div className="product-page__container">
         <div className="product__column__small">
           <img
