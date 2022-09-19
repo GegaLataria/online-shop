@@ -1,6 +1,9 @@
 .cart-header {
     font-size: 3vw;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 3px solid #6f42c1;
+    padding-left: .5vw;
+    padding-right: 1.5vw;
+    width: fit-content;
 }
 
 .cart-image {
@@ -11,6 +14,7 @@
 .cart-page-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #6f42c1;
 }
 
 .cart-page-container__item {
