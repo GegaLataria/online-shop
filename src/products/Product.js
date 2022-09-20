@@ -9,7 +9,7 @@ const Product = () => {
   const [selected, setSelected] = useState(image);
   const [zoomedImage, setZoomedImage] = useState(false);
   const header = "Iphone 14 Pro Max";
-  const price = "4199₾";
+  const price = 4199;
 
   return (
     <div className="product-page">
@@ -59,7 +59,7 @@ const Product = () => {
           <p>• დაბრუნება შესაძლებელია მიღებიდან 14 დღის განმავლობაში</p>
         </div>
       </div>
-      <h2 className="price-tag">ფასი: {price}</h2>
+      <h2 className="price-tag">ფასი: {price}₾</h2>
       <div className="buttons-container">
         <BuyButton />
         <exportedObject.CartButton

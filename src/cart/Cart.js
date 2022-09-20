@@ -26,14 +26,11 @@ const Cart = () => {
         "product",
         JSON.stringify({ header: header, image: image, price: price })
       );
-    } else {
-      handleClick();
     }
   };
 
   const product = JSON.parse(localStorage.getItem("product"));
   const { header, image, price } = product;
-
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
@@ -42,13 +39,11 @@ const Cart = () => {
           ? `თქვენ გაქვთ ${value.cartItems} ნივთი კალათაში`
           : `თქვენი კალათა ცარიელია`}
       </h2>
-      <div className="cart-page-container">
-        <div className="cart-page-container__item">
-          {image ? (
+      {header ? (
+        <div className="cart-page-container">
+          <div className="cart-page-container__item">
             <img src={image} alt="product" className="cart-image"></img>
-          ) : null}
-        </div>
-        {header ? (
+          </div>
           <div className="cart-page-container__item">
             <div className="cart-numbers-button">
               <h2
@@ -68,12 +63,21 @@ const Cart = () => {
               </h2>
             </div>
           </div>
-        ) : null}
-        <div className="cart-page-container__item">
-          <h2>{header}</h2>
-          <h2>{price}</h2>
+          <div className="cart-page-container__item">
+            <h2>{header}</h2>
+            <h2>{price}₾</h2>
+          </div>
+          <div className="cart-page-container__item">
+            <h2>სულ თანხა: </h2>
+            <h2>{value.cartItems * price}₾</h2>
+          </div>
+          <div className="cart-page-container__item">
+            <button onClick={handleClick} className="clear-cart-button">
+              წაშლა
+            </button>
+          </div>
         </div>
-      </div>
+      ) : null}
       <br></br>
       {header ? (
         <button className="clear-cart-button" onClick={handleClick}>
