@@ -1,10 +1,9 @@
 import React, { Suspense, lazy, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./cart/Cart";
+import data from "./data";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
-import image from "./photos/iphone.jpg";
-import imageWatch from "./photos/apple-watch-ultra.jpg";
 import Product2 from "./products/Product-2";
 
 export const Context = React.createContext();
@@ -24,18 +23,7 @@ const App = () => {
     { url: "http://localhost:3000/image-4.jpg", title: "Homepod" },
   ];
 
-  const products = [
-    {
-      header: "Iphone 14 Pro Max",
-      image: image,
-      price: 4199,
-    },
-    {
-      header: "Apple Watch Ultra",
-      image: imageWatch,
-      price: 2999,
-    },
-  ];
+  const [products, setProducts] = useState(data);
 
   const Home = lazy(() => import("./home/Home"));
   const Product = lazy(() => import("./products/Product"));
@@ -43,7 +31,9 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Context.Provider value={{ cartItems, setCartItems, products }}>
+        <Context.Provider
+          value={{ cartItems, setCartItems, products, setProducts }}
+        >
           <Header />
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>

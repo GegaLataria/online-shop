@@ -2,6 +2,13 @@ import React from "react";
 import { Context } from "../App";
 
 const handleClick = ({ header, image, price }, value) => {
+  // const product = JSON.parse(localStorage.getItem("product"));
+
+  const found = value.products.find((x) => {
+    return x.header === header;
+  });
+  found.amount = found.amount + 1;
+
   value.setCartItems(value.cartItems + 1);
   window.localStorage.setItem("cartItems", JSON.stringify(value.cartItems + 1));
   window.localStorage.setItem(

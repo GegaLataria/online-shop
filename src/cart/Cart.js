@@ -31,6 +31,7 @@ const Cart = () => {
 
   const product = JSON.parse(localStorage.getItem("product"));
   const { header, image, price } = product;
+
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
