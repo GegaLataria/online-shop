@@ -5,11 +5,11 @@ import exportedObject from "./CartButton";
 import BuyButton from "./BuyButton";
 import { Context } from "../App";
 
-const Product = () => {
+const Product2 = () => {
   const value = useContext(Context);
-  const header = value.products[0].header;
-  const price = value.products[0].price;
-  const image = value.products[0].image;
+  const header = value.products[1].header;
+  const price = value.products[1].price;
+  const image = value.products[1].image;
   const [selected, setSelected] = useState(image);
   const [zoomedImage, setZoomedImage] = useState(false);
 
@@ -73,4 +73,4 @@ const Product = () => {
     </div>
   );
 };
-export default Product;
+export default Product2;

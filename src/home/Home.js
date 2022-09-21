@@ -31,9 +31,9 @@ const Home = ({ slides }) => {
           <div className="products-section__list__item">
             <a
               className="products-section__list__item__input"
-              href="https://extra.ge/"
+              href="/product/id-2"
             >
-              გაზქურა
+              საათი
             </a>
           </div>
           <div className="products-section__list__item">

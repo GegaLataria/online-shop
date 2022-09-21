@@ -4,6 +4,8 @@ import Cart from "./cart/Cart";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import image from "./photos/iphone.jpg";
+import imageWatch from "./photos/apple-watch-ultra.jpg";
+import Product2 from "./products/Product-2";
 
 export const Context = React.createContext();
 
@@ -28,6 +30,11 @@ const App = () => {
       image: image,
       price: 4199,
     },
+    {
+      header: "Apple Watch Ultra",
+      image: imageWatch,
+      price: 2999,
+    },
   ];
 
   const Home = lazy(() => import("./home/Home"));
@@ -41,7 +48,8 @@ const App = () => {
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home slides={slides} />} />
-              <Route path="/product/id-1" element={<Product />} />
+              <Route exact path="/product/id-1" element={<Product />} />
+              <Route exact path="/product/id-2" element={<Product2 />} />
               <Route path="/cart" element={<Cart />} />
             </Routes>
           </Suspense>
