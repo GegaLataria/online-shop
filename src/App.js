@@ -4,7 +4,7 @@ import Cart from "./cart/Cart";
 import data from "./data";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
-import Product2 from "./products/Product-2";
+import NewProduct from "./products/NewProduct";
 
 export const Context = React.createContext();
 
@@ -23,23 +23,30 @@ const App = () => {
     { url: "http://localhost:3000/image-4.jpg", title: "Homepod" },
   ];
 
-  const [products, setProducts] = useState(data);
+  const [products, setProducts] = useState([]);
 
   const Home = lazy(() => import("./home/Home"));
-  const Product = lazy(() => import("./products/Product"));
 
   return (
     <div>
       <Router>
         <Context.Provider
-          value={{ cartItems, setCartItems, products, setProducts }}
+          value={{ cartItems, setCartItems, products, setProducts, data }}
         >
           <Header />
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home slides={slides} />} />
-              <Route exact path="/product/id-1" element={<Product />} />
-              <Route exact path="/product/id-2" element={<Product2 />} />
+              <Route
+                exact
+                path="/product/id-0"
+                element={<NewProduct index={0} />}
+              />
+              <Route
+                exact
+                path="/product/id-1"
+                element={<NewProduct index={1} />}
+              />
               <Route path="/cart" element={<Cart />} />
             </Routes>
           </Suspense>

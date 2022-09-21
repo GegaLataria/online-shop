@@ -23,7 +23,7 @@ const Home = ({ slides }) => {
           <div className="products-section__list__item">
             <a
               className="products-section__list__item__input"
-              href="/product/id-1"
+              href="/product/id-0"
             >
               ტელეფონი
             </a>
@@ -31,7 +31,7 @@ const Home = ({ slides }) => {
           <div className="products-section__list__item">
             <a
               className="products-section__list__item__input"
-              href="/product/id-2"
+              href="/product/id-1"
             >
               საათი
             </a>

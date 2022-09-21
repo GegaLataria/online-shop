@@ -1,15 +1,17 @@
-import iphone2 from "./iphone-2.jpg";
+// import iphone2 from "./iphone-2.jpg";
 import React, { useContext, useState } from "react";
 import "./Product.css";
 import exportedObject from "./CartButton";
 import BuyButton from "./BuyButton";
 import { Context } from "../App";
 
-const Product = () => {
+const NewProduct = ({ index }) => {
   const value = useContext(Context);
-  const header = value.data[0].header;
-  const price = value.data[0].price;
-  const image = value.data[0].image;
+  const header = value.data[index].header;
+  const price = value.data[index].price;
+  const image = value.data[index].image;
+  const image2 = value.data[index].image2;
+
   const [selected, setSelected] = useState(image);
   const [zoomedImage, setZoomedImage] = useState(false);
 
@@ -27,12 +29,12 @@ const Product = () => {
             onClick={() => setSelected(image)}
           ></img>
           <img
-            src={iphone2}
+            src={image2}
             alt="iphone"
             className={`product-image-small ${
-              selected === iphone2 ? "selected-image" : ""
+              selected === image2 ? "selected-image" : ""
             }`}
-            onClick={() => setSelected(iphone2)}
+            onClick={() => setSelected(image2)}
           ></img>
         </div>
         <div className="product-page__container__column_photo">
@@ -73,4 +75,4 @@ const Product = () => {
     </div>
   );
 };
-export default Product;
+export default NewProduct;

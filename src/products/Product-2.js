@@ -7,9 +7,9 @@ import { Context } from "../App";
 
 const Product2 = () => {
   const value = useContext(Context);
-  const header = value.products[1].header;
-  const price = value.products[1].price;
-  const image = value.products[1].image;
+  const header = value.data[1].header;
+  const price = value.data[1].price;
+  const image = value.data[1].image;
   const [selected, setSelected] = useState(image);
   const [zoomedImage, setZoomedImage] = useState(false);
 
