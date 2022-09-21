@@ -70,6 +70,7 @@ const NewProduct = ({ index }) => {
           header={header}
           image={image}
           price={price}
+          index={index}
         />
       </div>
     </div>

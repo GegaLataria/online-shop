@@ -4,7 +4,7 @@ import imageWatch from "./photos/apple-watch-ultra.jpg";
 
 const data = [
   {
-    id: 1,
+    id: 0,
     header: "Iphone 14 Pro Max",
     image: image,
     image2: image2,
@@ -12,7 +12,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 2,
+    id: 1,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
