@@ -29,8 +29,12 @@ const Cart = () => {
     }
   };
 
-  const product = JSON.parse(localStorage.getItem("product"));
-  const { header, image, price } = product;
+  let product = JSON.parse(localStorage.getItem("product"));
+  if (product) {
+    product = product[0];
+  }
+
+  const { header, image, price } = product || {};
 
   return (
     <div>

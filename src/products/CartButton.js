@@ -3,16 +3,21 @@ import { Context } from "../App";
 import data from "../data";
 
 const handleClick = ({ header, image, price, index }, value) => {
-  // const product = JSON.parse(localStorage.getItem("product"));
   // value.setProducts({ header: header, image: image, price: price });
 
   //new start
-  console.log("header", header);
-  console.log("data", data);
-  console.log("index", index);
+  const product = JSON.parse(localStorage.getItem("product"));
+  console.log(product);
+  if (product.header) {
+    value.setProducts(product);
+  }
   const exist = value.products.find((x) => x.id === index);
   if (exist) {
-    console.log(exist);
+    value.setProducts(
+      value.products.map((x) =>
+        x.id === index ? { ...exist, amount: exist.amount + 1 } : x
+      )
+    );
   } else {
     value.setProducts([...value.products, { ...data[index], amount: 1 }]);
   }
@@ -20,10 +25,7 @@ const handleClick = ({ header, image, price, index }, value) => {
 
   value.setCartItems(value.cartItems + 1);
   window.localStorage.setItem("cartItems", JSON.stringify(value.cartItems + 1));
-  window.localStorage.setItem(
-    "product",
-    JSON.stringify({ header: header, image: image, price: price })
-  );
+  window.localStorage.setItem("product", JSON.stringify(value.products));
 };
 
 const CartButton = ({ header, image, price, index }) => {
