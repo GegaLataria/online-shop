@@ -9,10 +9,7 @@ const Cart = () => {
   const handleClick = () => {
     value.setCartItems(0);
     window.localStorage.setItem("cartItems", JSON.stringify(0));
-    window.localStorage.setItem(
-      "product",
-      JSON.stringify({ header: null, image: null, price: null })
-    );
+    window.localStorage.setItem("product", JSON.stringify(null));
   };
 
   const handleSubtract = () => {
@@ -30,11 +27,12 @@ const Cart = () => {
   };
 
   let product = JSON.parse(localStorage.getItem("product"));
+  console.log("cart product", product);
   if (product) {
     product = product[0];
   }
 
-  const { header, image, price } = product || {};
+  const { header, image, price, index } = product || {};
 
   return (
     <div>
@@ -60,7 +58,10 @@ const Cart = () => {
               <h2>{value.cartItems}</h2>
               <h2
                 onClick={() =>
-                  exportedObject.handleClick({ header, image, price }, value)
+                  exportedObject.handleClick(
+                    { header, image, price, index },
+                    value
+                  )
                 }
                 className="cart-numbers-button__item"
               >
