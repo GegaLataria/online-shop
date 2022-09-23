@@ -71,6 +71,7 @@ const NewProduct = ({ index }) => {
           image={image}
           price={price}
           index={index}
+          value={value}
         />
       </div>
     </div>

@@ -9,28 +9,28 @@ const Cart = () => {
   const handleClick = () => {
     value.setCartItems(0);
     value.setProducts([]);
-    // window.localStorage.setItem("cartItems", JSON.stringify(0));
-    // window.localStorage.setItem("product", JSON.stringify([]));
+    window.localStorage.setItem("cartItems", JSON.stringify(0));
+    window.localStorage.setItem("product", JSON.stringify([]));
   };
 
   const handleSubtract = () => {
     if (value.cartItems > 1) {
       value.setCartItems(value.cartItems - 1);
-      // window.localStorage.setItem(
-      //   "cartItems",
-      //   JSON.stringify(value.cartItems - 1)
-      // );
-      // window.localStorage.setItem(
-      //   "product",
-      //   JSON.stringify({ header: header, image: image, price: price })
-      // );
+      window.localStorage.setItem(
+        "cartItems",
+        JSON.stringify(value.cartItems - 1)
+      );
+      window.localStorage.setItem(
+        "product",
+        JSON.stringify({ header: header, image: image, price: price })
+      );
     }
   };
 
   let product = JSON.parse(localStorage.getItem("product"));
   console.log("cart product", product);
   if (product) {
-    product = product[0];
+    product = product[1];
   }
 
   const { header, image, price, index } = product || {};

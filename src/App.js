@@ -23,7 +23,11 @@ const App = () => {
     { url: "http://localhost:3000/image-4.jpg", title: "Homepod" },
   ];
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(() => {
+    const saved = localStorage.getItem("product");
+    const initialValue = JSON.parse(saved);
+    return initialValue || [];
+  });
 
   const Home = lazy(() => import("./home/Home"));
 
