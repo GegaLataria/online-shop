@@ -1,7 +1,14 @@
 import React from "react";
 import exportedObject from "../products/CartButton";
 
-export default function CartItems({ header, image, price, index, value }) {
+export default function CartItems({
+  header,
+  image,
+  price,
+  index,
+  amount,
+  value,
+}) {
   const handleClick = () => {
     value.setCartItems(0);
     value.setProducts([]);
@@ -42,7 +49,7 @@ export default function CartItems({ header, image, price, index, value }) {
               >
                 —
               </h2>
-              <h2>{value.cartItems}</h2>
+              <h2>{amount}</h2>
               <h2
                 onClick={() =>
                   exportedObject.handleClick(
@@ -62,7 +69,7 @@ export default function CartItems({ header, image, price, index, value }) {
           </div>
           <div className="cart-page-container__item">
             <h2>სულ თანხა: </h2>
-            <h2>{value.cartItems * price}₾</h2>
+            <h2>{amount * price}₾</h2>
           </div>
           <div className="cart-page-container__item">
             <button onClick={handleClick} className="clear-cart-button">
