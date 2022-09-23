@@ -33,7 +33,7 @@ const Cart = () => {
       {product?.map((x) => {
         return (
           <CartItems
-            key={x?.id}
+            key={x.id}
             amount={x?.amount}
             header={x?.header}
             price={x?.price}
