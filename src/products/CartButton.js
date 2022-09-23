@@ -4,6 +4,7 @@ import data from "../data";
 
 const handleClick = ({ header, image, price, index }, value) => {
   // value.setProducts({ header: header, image: image, price: price });
+  console.log("index", index);
 
   //new start
   let product = JSON.parse(localStorage.getItem("product"));

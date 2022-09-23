@@ -34,6 +34,8 @@ export default function CartItems({
     }
   };
 
+  console.log("cartitems component", index);
+
   return (
     <div>
       {header ? (

@@ -37,7 +37,7 @@ const Cart = () => {
             amount={x?.amount}
             header={x?.header}
             price={x?.price}
-            index={x?.index}
+            index={x?.id}
             image={x?.image}
             value={value}
           />
