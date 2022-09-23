@@ -19,7 +19,7 @@ export default function CartItems({
   const handleSubtract = () => {
     const exist = value.products.find((x) => x.id === index);
 
-    if (value.cartItems > 1) {
+    if (amount > 1) {
       value.setCartItems(value.cartItems - 1);
       window.localStorage.setItem(
         "cartItems",
@@ -30,11 +30,16 @@ export default function CartItems({
           x.id === index ? { ...exist, amount: exist.amount - 1 } : x
         )
       );
-      window.localStorage.setItem("product", JSON.stringify(value.products));
+      window.localStorage.setItem(
+        "product",
+        JSON.stringify(
+          value.products.map((x) =>
+            x.id === index ? { ...exist, amount: exist.amount - 1 } : x
+          )
+        )
+      );
     }
   };
-
-  console.log("cartitems component", index);
 
   return (
     <div>
