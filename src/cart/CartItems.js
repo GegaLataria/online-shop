@@ -10,10 +10,19 @@ export default function CartItems({
   value,
 }) {
   const handleClick = () => {
-    value.setCartItems(0);
-    value.setProducts([]);
-    window.localStorage.setItem("cartItems", JSON.stringify(0));
-    window.localStorage.setItem("product", JSON.stringify([]));
+    value.setCartItems(value.cartItems - amount);
+    value.products.splice(index, 1);
+    value.setProducts(value.products);
+    window.localStorage.setItem(
+      "cartItems",
+      JSON.stringify(value.cartItems - amount)
+    );
+    window.localStorage.setItem("product", JSON.stringify(value.products));
+    let totalQty = JSON.parse(localStorage.getItem("cartItems"));
+    if (totalQty === 0) {
+      value.setProducts([]);
+      window.localStorage.setItem("product", JSON.stringify([]));
+    }
   };
 
   const handleSubtract = () => {

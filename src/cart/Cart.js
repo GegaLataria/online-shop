@@ -9,11 +9,6 @@ const Cart = () => {
 
   let product = JSON.parse(localStorage.getItem("product"));
   console.log("cart product", product);
-  // if (product) {
-  //   product = product[0];
-  // }
-
-  // const { header, image, price, index } = product || {};
 
   const handleClick = () => {
     value.setCartItems(0);
