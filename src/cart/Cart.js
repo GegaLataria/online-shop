@@ -8,21 +8,22 @@ const Cart = () => {
 
   const handleClick = () => {
     value.setCartItems(0);
-    window.localStorage.setItem("cartItems", JSON.stringify(0));
-    window.localStorage.setItem("product", JSON.stringify(null));
+    value.setProducts([]);
+    // window.localStorage.setItem("cartItems", JSON.stringify(0));
+    // window.localStorage.setItem("product", JSON.stringify([]));
   };
 
   const handleSubtract = () => {
     if (value.cartItems > 1) {
       value.setCartItems(value.cartItems - 1);
-      window.localStorage.setItem(
-        "cartItems",
-        JSON.stringify(value.cartItems - 1)
-      );
-      window.localStorage.setItem(
-        "product",
-        JSON.stringify({ header: header, image: image, price: price })
-      );
+      // window.localStorage.setItem(
+      //   "cartItems",
+      //   JSON.stringify(value.cartItems - 1)
+      // );
+      // window.localStorage.setItem(
+      //   "product",
+      //   JSON.stringify({ header: header, image: image, price: price })
+      // );
     }
   };
 
