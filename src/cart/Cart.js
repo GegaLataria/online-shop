@@ -9,11 +9,11 @@ const Cart = () => {
 
   let product = JSON.parse(localStorage.getItem("product"));
   console.log("cart product", product);
-  if (product) {
-    product = product[0];
-  }
+  // if (product) {
+  //   product = product[0];
+  // }
 
-  const { header, image, price, index } = product || {};
+  // const { header, image, price, index } = product || {};
 
   return (
     <div>
@@ -23,13 +23,18 @@ const Cart = () => {
           ? `თქვენ გაქვთ ${value.cartItems} ნივთი კალათაში`
           : `თქვენი კალათა ცარიელია`}
       </h2>
-      <CartItems
-        header={header}
-        price={price}
-        index={index}
-        image={image}
-        value={value}
-      />
+      {product?.map((x) => {
+        return (
+          <CartItems
+            key={x?.id}
+            header={x?.header}
+            price={x?.price}
+            index={x?.index}
+            image={x?.image}
+            value={value}
+          />
+        );
+      })}
     </div>
   );
 };
