@@ -4,7 +4,7 @@ import data from "../data";
 
 const handleClick = ({ header, image, price, index }, value) => {
   // value.setProducts({ header: header, image: image, price: price });
-  console.log(index);
+  console.log("index", index);
 
   //new start
   let product = JSON.parse(localStorage.getItem("product"));
@@ -27,32 +27,21 @@ const handleClick = ({ header, image, price, index }, value) => {
     );
     value.setCartItems(value.cartItems + 1);
   } else {
-    value.setProducts([...value.products, { ...data[index], amount: 2 }]);
+    console.log("val.prods", value.products);
+    value.setProducts([...value.products, { ...data[index], amount: 1 }]);
     value.setCartItems(value.cartItems + 1);
     console.log("products", value.products);
     value.setCartItems(value.cartItems + 1);
   }
 
-  // if (exist) {
-  // value.setProducts(
-  //   value.products.map((x) =>
-  //     x.id === index ? { ...exist, amount: exist.amount + 1 } : x
-  //   )
-  // );
-  //   console.log("value.products", value.products);
-  // } else {
-  //   value.setProducts([...value.products, { ...data[index], amount: 1 }]);
-  // }
-
-  //finish
-
   if (product) {
-    value.setCartItems(value.cartItems + 1);
+    // value.setCartItems(value.cartItems + 1);
+    let productData = [...value.products, { ...data[index], amount: 1 }];
     window.localStorage.setItem(
       "cartItems",
       JSON.stringify(value.cartItems + 1)
     );
-    window.localStorage.setItem("product", JSON.stringify(value.products));
+    window.localStorage.setItem("product", JSON.stringify(productData));
   }
 };
 
