@@ -79,11 +79,6 @@ export default function CartItems({
         </div>
       ) : null}
       <br></br>
-      {header ? (
-        <button className="clear-cart-button" onClick={handleClick}>
-          კალათის გასუფთავება
-        </button>
-      ) : null}
     </div>
   );
 }

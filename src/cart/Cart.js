@@ -15,6 +15,13 @@ const Cart = () => {
 
   // const { header, image, price, index } = product || {};
 
+  const handleClick = () => {
+    value.setCartItems(0);
+    value.setProducts([]);
+    window.localStorage.setItem("cartItems", JSON.stringify(0));
+    window.localStorage.setItem("product", JSON.stringify([]));
+  };
+
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
@@ -36,6 +43,11 @@ const Cart = () => {
           />
         );
       })}
+      {product.length > 0 ? (
+        <button className="clear-cart-button" onClick={handleClick}>
+          კალათის გასუფთავება
+        </button>
+      ) : null}
     </div>
   );
 };
