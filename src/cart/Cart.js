@@ -39,16 +39,20 @@ const Cart = () => {
         );
       })}
       {product.length > 0 ? (
-        <div>
+        <div className="cart-items-container">
           <button className="clear-cart-button" onClick={handleClick}>
             კალათის გასუფთავება
           </button>
-          <h2>
-            ჯამური თანხა:{" "}
-            {value.products.reduce(function (prev, cur) {
-              return prev + cur.amount * cur.price;
-            }, 0)}
-          </h2>
+          <div className="cart-helper-container">
+            <h2 className="total-money-header">
+              ჯამური თანხა:{" "}
+              {value.products.reduce(function (prev, cur) {
+                return prev + cur.amount * cur.price;
+              }, 0)}
+              ₾
+            </h2>
+            <button className="clear-cart-button">ყიდვა</button>
+          </div>
         </div>
       ) : null}
     </div>

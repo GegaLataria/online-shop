@@ -38,6 +38,22 @@
     color: black;
 }
 
+.cart-items-container {
+    margin: 1vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-helper-container {
+    display: flex;
+}
+
+.total-money-header {
+    margin-right: 1vw;
+    transform: translate(0, -15%);
+}
+
 .clear-cart-button {
     background-color: #6f42c1;
     border: none;
@@ -52,3 +68,4 @@
 .clear-cart-button:active {
     background-color: blueviolet;
 }
+
