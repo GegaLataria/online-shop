@@ -13,6 +13,9 @@ const App = () => {
     // getting stored value
     const saved = localStorage.getItem("cartItems");
     const initialValue = JSON.parse(saved);
+    if (!initialValue) {
+      localStorage.setItem("cartItems", JSON.stringify(0));
+    }
     return initialValue;
   });
 
@@ -26,6 +29,9 @@ const App = () => {
   const [products, setProducts] = useState(() => {
     const saved = localStorage.getItem("product");
     const initialValue = JSON.parse(saved);
+    if (!initialValue) {
+      localStorage.setItem("product", JSON.stringify([]));
+    }
     return initialValue || [];
   });
 
