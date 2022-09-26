@@ -5,6 +5,10 @@ import data from "./data";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import NewProduct from "./products/NewProduct";
+import image1 from "./photos/image-1.jpg";
+import image2 from "./photos/image-2.jpg";
+import image3 from "./photos/image-3.jpg";
+import image4 from "./photos/image-4.jpg";
 
 export const Context = React.createContext();
 
@@ -20,10 +24,10 @@ const App = () => {
   });
 
   const slides = [
-    { url: "http://localhost:3000/image-1.jpg", title: "Iphone" },
-    { url: "http://localhost:3000/image-2.jpg", title: "Watch" },
-    { url: "http://localhost:3000/image-3.jpg", title: "Macbook" },
-    { url: "http://localhost:3000/image-4.jpg", title: "Homepod" },
+    { url: image1, title: "Iphone" },
+    { url: image2, title: "Watch" },
+    { url: image3, title: "Macbook" },
+    { url: image4, title: "Homepod" },
   ];
 
   const [products, setProducts] = useState(() => {
