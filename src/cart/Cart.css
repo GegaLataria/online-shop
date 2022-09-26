@@ -63,9 +63,22 @@
     color: #fff;
     border-radius: .5vw;
     margin-bottom: 2vw;
+    text-decoration: none;
 }
 
 .clear-cart-button:active {
     background-color: blueviolet;
+}
+
+.order-container {
+    text-align: center;
+}
+
+
+.buyText {
+    font-size: 3vw;
+    color: rgb(39, 209, 39);
+    text-align: center;
+    margin-bottom: 5vw;
 }
 

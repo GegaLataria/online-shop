@@ -34,6 +34,9 @@ const Home = ({ slides }) => {
                     src={x.image}
                     alt={x.header}
                   ></img>
+                  {x.header}
+                  <br></br>
+                  {x.price}₾
                 </a>
               </div>
             );

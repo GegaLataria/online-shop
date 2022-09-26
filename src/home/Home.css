@@ -24,6 +24,10 @@
 }
 
 .products-section__list {
+    padding: 2vw;
+    margin-bottom: 2vw;
+    background: rgba(110, 66, 193, .2);
+    border-radius: .5vw;
     margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;
@@ -35,8 +39,8 @@
 .products-section__list__item {
     width: 20%;
     background: rgba(110, 66, 193, 0.6);
-    padding: 1vw;
-    border-radius: 1.25vw;
+    padding: 0vw .01vw 1vw .01vw;
+    border-radius: .5vw;
     margin-bottom: 1.25vw;
 }
 
@@ -54,10 +58,11 @@
 .products-section__list__item__input {
     text-decoration: none;
     color: #fff;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .products-section__list__item__image {
     width: 100%;
     height: auto;
+
 }
