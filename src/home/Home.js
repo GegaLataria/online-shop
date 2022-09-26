@@ -23,9 +23,8 @@ const Home = ({ slides }) => {
         <div className="products-section__list">
           {data.map((x) => {
             return (
-              <div className="products-section__list__item">
+              <div key={x.id} className="products-section__list__item">
                 <a
-                  key={x.id}
                   className="products-section__list__item__input"
                   href={`/product/id-${x.id}`}
                 >

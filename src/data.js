@@ -20,7 +20,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 2,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -28,7 +28,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 3,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -36,7 +36,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 4,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -44,7 +44,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 5,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -52,7 +52,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 6,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -60,7 +60,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 7,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -68,7 +68,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 8,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -76,7 +76,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 9,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -84,7 +84,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 10,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
@@ -92,7 +92,7 @@ const data = [
     amount: 0,
   },
   {
-    id: 1,
+    id: 11,
     header: "Apple Watch Ultra",
     image: imageWatch,
     image2: image2,
