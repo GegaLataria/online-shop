@@ -1,4 +1,8 @@
 const BuyButton = () => {
-  return <button className="shop-button">ყიდვა</button>;
+  return (
+    <a href="/cart" className="clear-cart-button">
+      ყიდვა
+    </a>
+  );
 };
 export default BuyButton;

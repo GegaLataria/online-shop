@@ -68,20 +68,6 @@
     display: flex;
 }
 
-.shop-button {
-    background-color: #6f42c1;
-    padding: 1vw 2vw;
-    color: #fff;
-    border: none;
-    border-radius: .5vw;
-    font-size: 1.5vw;
-    cursor: pointer;
-}
-
-.shop-button:active {
-    background-color: blueviolet;
-}
-
 .cart-button {
     margin-left: 1.5vw;
     background-color: rgba(110, 66, 193, .3);
