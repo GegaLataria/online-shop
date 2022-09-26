@@ -35,7 +35,7 @@
 .products-section__list__item {
     width: 20%;
     background: rgba(110, 66, 193, 0.6);
-    padding: 8vw 1.25vw;
+    padding: 1vw;
     border-radius: 1.25vw;
     margin-bottom: 1.25vw;
 }
@@ -55,4 +55,9 @@
     text-decoration: none;
     color: #fff;
     font-size: 2vw;
+}
+
+.products-section__list__item__image {
+    width: 100%;
+    height: auto;
 }
