@@ -26,21 +26,31 @@ const Cart = () => {
   return (
     <div>
       <h2 className="cart-header">კალათა</h2>
+
       {!buyText ? (
-        <h2>
-          {value.cartItems
-            ? `თქვენ გაქვთ ${value.cartItems} ნივთი კალათაში`
-            : `თქვენი კალათა ცარიელია`}
-        </h2>
-      ) : null}
-      {buyText ? (
+        <div className="order-container">
+          {value.cartItems ? (
+            <h2 className="buyText black">
+              თქვენ გაქვთ {value.cartItems} ნივთი კალათაში
+            </h2>
+          ) : (
+            <div>
+              <h2 className="buyText black">თქვენი კალათა ცარიელია</h2>
+              <a className="clear-cart-button" href="/">
+                გააგრძელე შოპინგი
+              </a>
+            </div>
+          )}
+        </div>
+      ) : (
         <div className="order-container">
           <div className="buyText">{buyText}</div>
           <a className="clear-cart-button" href="/">
             გააგრძელე შოპინგი
           </a>
         </div>
-      ) : null}
+      )}
+
       {product?.map((x) => {
         return (
           <CartItems
