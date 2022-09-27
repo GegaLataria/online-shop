@@ -11,20 +11,20 @@ const Header = () => {
         <a href="/" className="header-list__item">
           მთავარი
         </a>
-        <a href="https://extra.ge/" className="header-list__item">
-          სათამაშოები
+        <a href="/iphone" className="header-list__item">
+          Iphone
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          ტექნიკა
+          Mac
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          სახლი
+          Airpods
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          სპორტი
+          Watch
         </a>
         <a href="https://extra.ge/" className="header-list__item">
-          სილამაზე
+          Accessories
         </a>
         <a href="/cart" className="header-list__item header-list__cart">🛒{value.cartItems?<span className="cart-items">{value.cartItems}</span>:null}</a>
       </div>

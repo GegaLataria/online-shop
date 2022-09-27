@@ -2,6 +2,7 @@ import { useRef } from "react";
 import ImageSlider from "../slider/ImageSlider";
 import "./Home.css";
 import data from "../data";
+import RenderProducts from "./RenderProducts";
 
 const Home = ({ slides }) => {
   const ref = useRef(null);
@@ -20,27 +21,7 @@ const Home = ({ slides }) => {
         <div className="title-container">
           <h2 className="products-section__title">პოპულარული პროდუქცია</h2>
         </div>
-        <div className="products-section__list">
-          {data.map((x) => {
-            return (
-              <div key={x.id} className="products-section__list__item">
-                <a
-                  className="products-section__list__item__input"
-                  href={`/product/id-${x.id}`}
-                >
-                  <img
-                    className="products-section__list__item__image"
-                    src={x.image}
-                    alt={x.header}
-                  ></img>
-                  {x.header}
-                  <br></br>
-                  {x.price}₾
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        <RenderProducts />
       </div>
     </div>
   );
