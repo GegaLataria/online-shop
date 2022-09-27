@@ -19,10 +19,18 @@
 
 .cart-page-container__item {
     margin-left: 3vw;
+    width: 100vw;
+}
+
+.cart-numbers-button__container {
+    display: flex;
+    justify-content: center;
 }
 
 .cart-numbers-button {
     display: flex;
+    width: fit-content;
+    justify-content: center;
     border: 1px solid #6f42c1;
     padding: 0 1vw;
 }

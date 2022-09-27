@@ -59,25 +59,27 @@ export default function CartItems({
             <img src={image} alt="product" className="cart-image"></img>
           </div>
           <div className="cart-page-container__item">
-            <div className="cart-numbers-button">
-              <h2
-                onClick={handleSubtract}
-                className="cart-numbers-button__item"
-              >
-                —
-              </h2>
-              <h2>{amount}</h2>
-              <h2
-                onClick={() =>
-                  exportedObject.handleClick(
-                    { header, image, price, index },
-                    value
-                  )
-                }
-                className="cart-numbers-button__item"
-              >
-                +
-              </h2>
+            <div className="cart-numbers-button__container">
+              <div className="cart-numbers-button">
+                <h2
+                  onClick={handleSubtract}
+                  className="cart-numbers-button__item"
+                >
+                  —
+                </h2>
+                <h2>{amount}</h2>
+                <h2
+                  onClick={() =>
+                    exportedObject.handleClick(
+                      { header, image, price, index },
+                      value
+                    )
+                  }
+                  className="cart-numbers-button__item"
+                >
+                  +
+                </h2>
+              </div>
             </div>
           </div>
           <div className="cart-page-container__item">
