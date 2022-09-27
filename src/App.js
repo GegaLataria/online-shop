@@ -9,6 +9,7 @@ import image1 from "./photos/image-1.jpg";
 import image2 from "./photos/image-2.jpg";
 import image3 from "./photos/image-3.jpg";
 import image4 from "./photos/image-4.jpg";
+import FilteredProducts from "./products/FilteredProducts";
 
 export const Context = React.createContext();
 
@@ -95,6 +96,31 @@ const App = () => {
                 exact
                 path="/product/id-8"
                 element={<NewProduct index={8} />}
+              />
+              <Route
+                exact
+                path="/iphone"
+                element={<FilteredProducts product={"Iphone"} />}
+              />
+              <Route
+                exact
+                path="/mac"
+                element={<FilteredProducts product={"Mac"} />}
+              />
+              <Route
+                exact
+                path="/airpods"
+                element={<FilteredProducts product={"Airpods"} />}
+              />
+              <Route
+                exact
+                path="/watch"
+                element={<FilteredProducts product={"Watch"} />}
+              />
+              <Route
+                exact
+                path="/accessories"
+                element={<FilteredProducts product={"Acc"} />}
               />
               <Route path="/cart" element={<Cart />} />
             </Routes>

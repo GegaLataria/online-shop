@@ -44,7 +44,7 @@ const data = [
   },
   {
     id: 4,
-    header: "Apple Homepod Mini",
+    header: "Apple Homepod Mini Acc",
     image: homepod,
     image2: image2,
     price: 199,
@@ -76,7 +76,7 @@ const data = [
   },
   {
     id: 8,
-    header: "Iphone 14 Pro Case",
+    header: "Apple 14 Pro Case Acc",
     image: iphoneCase,
     image2: image2,
     price: 129,
