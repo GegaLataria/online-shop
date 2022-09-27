@@ -71,6 +71,31 @@ const App = () => {
                 path="/product/id-3"
                 element={<NewProduct index={3} />}
               />
+              <Route
+                exact
+                path="/product/id-4"
+                element={<NewProduct index={4} />}
+              />
+              <Route
+                exact
+                path="/product/id-5"
+                element={<NewProduct index={5} />}
+              />
+              <Route
+                exact
+                path="/product/id-6"
+                element={<NewProduct index={6} />}
+              />
+              <Route
+                exact
+                path="/product/id-7"
+                element={<NewProduct index={7} />}
+              />
+              <Route
+                exact
+                path="/product/id-8"
+                element={<NewProduct index={8} />}
+              />
               <Route path="/cart" element={<Cart />} />
             </Routes>
           </Suspense>

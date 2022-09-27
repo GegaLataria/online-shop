@@ -5,6 +5,9 @@ import macbook from "./photos/image-3.jpg";
 import airpod from "./photos/airpod.jpg";
 import homepod from "./photos/image-4.jpg";
 import appleWatch8 from "./photos/apple-8.jpg";
+import iphone14 from "./photos/iphone14.jpg";
+import iphoneCase from "./photos/case.jpg";
+import airpodsPro from "./photos/airpods-pro.jpg";
 
 const data = [
   {
@@ -57,26 +60,26 @@ const data = [
   },
   {
     id: 6,
-    header: "Apple Watch Ultra",
-    image: imageWatch,
+    header: "Iphone 14",
+    image: iphone14,
     image2: image2,
-    price: 2999,
+    price: 3099,
     amount: 0,
   },
   {
     id: 7,
-    header: "Apple Watch Ultra",
-    image: imageWatch,
+    header: "Apple Airpods Pro 2",
+    image: airpodsPro,
     image2: image2,
-    price: 2999,
+    price: 799,
     amount: 0,
   },
   {
     id: 8,
-    header: "Apple Watch Ultra",
-    image: imageWatch,
+    header: "Iphone 14 Pro Case",
+    image: iphoneCase,
     image2: image2,
-    price: 2999,
+    price: 129,
     amount: 0,
   },
 ];

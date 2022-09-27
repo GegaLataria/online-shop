@@ -63,6 +63,5 @@
 
 .products-section__list__item__image {
     width: 100%;
-    height: auto;
-    min-height: 250px;
+    height: 220px;
 }
