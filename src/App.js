@@ -10,6 +10,7 @@ import image2 from "./photos/image-2.jpg";
 import image3 from "./photos/image-3.jpg";
 import image4 from "./photos/image-4.jpg";
 import FilteredProducts from "./products/FilteredProducts";
+import Terms from "./footer/Terms";
 
 export const Context = React.createContext();
 
@@ -121,6 +122,26 @@ const App = () => {
                 exact
                 path="/accessories"
                 element={<FilteredProducts product={"Acc"} />}
+              />
+              <Route
+                exact
+                path="/terms-and-conditions"
+                element={<Terms header={"წესები და პირობები"} />}
+              />
+              <Route
+                exact
+                path="/contact"
+                element={<Terms header={"კონტაქტი"} />}
+              />
+              <Route
+                exact
+                path="/partners"
+                element={<Terms header={"პარტნიორები"} />}
+              />
+              <Route
+                exact
+                path="/about-us"
+                element={<Terms header={"ჩვენ შესახებ"} />}
               />
               <Route path="/cart" element={<Cart />} />
             </Routes>

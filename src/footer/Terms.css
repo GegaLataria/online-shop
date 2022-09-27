@@ -1,0 +1,22 @@
+.terms-header {
+    font-size: 2.5vw;
+    border-bottom: 2.5px solid #6f42c1;
+    margin: 2vw 1vw 0vw 1vw;
+    border-right: 3px solid #6f42c1;
+    animation: typing 2s steps(22) alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 375px;
+}
+
+@keyframes typing {from {width: 0; }}
+
+.terms-text {
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+.terms-text::first-letter {
+    color: #6f42c1;
+    font-size: 5vw;
+}
