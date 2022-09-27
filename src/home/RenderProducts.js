@@ -1,7 +1,6 @@
 import React from "react";
-import data from "../data";
 
-export default function RenderProducts() {
+export default function RenderProducts({ data }) {
   return (
     <div className="products-section__list">
       {data.map((x) => {

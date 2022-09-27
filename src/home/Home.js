@@ -21,7 +21,7 @@ const Home = ({ slides }) => {
         <div className="title-container">
           <h2 className="products-section__title">პოპულარული პროდუქცია</h2>
         </div>
-        <RenderProducts />
+        <RenderProducts data={data} />
       </div>
     </div>
   );
