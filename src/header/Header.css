@@ -4,13 +4,11 @@
     align-items: center;
     background-color: #6f42c1;
     padding: .5vw 1vw;
-    /* position: fixed;
-    right: 0;
-    top: 0;
-    left: 0; */
 }
 
 .cart-items {
+    position: absolute;
+    transform: translate(-1.5vw, 0vw);
     background-color: #fff;
     padding: .2vw .7vw;
     border-radius: 50px;
@@ -29,5 +27,9 @@
 }
 
 .header-list__cart {
-    font-size: 3vw;
+    position: relative;
+}
+
+.cart-image {
+    width: 100px;
 }
