@@ -27,7 +27,7 @@ const Header = () => {
         <a href="/accessories" className="header-list__item">
           Accessories
         </a>
-        <a href="/cart" className="header-list__item header-list__cart"><img className="cart-image" src={cartImage} alt="cart"></img>{value.cartItems?<span className="cart-items">{value.cartItems}</span>:null}</a>
+        <a href="/cart" className="header-list__item header-list__cart"><img className="header-cart-image" src={cartImage} alt="cart"></img>{value.cartItems?<span className="cart-items">{value.cartItems}</span>:null}</a>
       </div>
     </div>
   );
