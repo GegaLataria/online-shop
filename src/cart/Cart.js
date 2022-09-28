@@ -66,9 +66,11 @@ const Cart = () => {
       })}
       {product.length > 0 ? (
         <div className="cart-items-container">
-          <button className="clear-cart-button" onClick={handleClick}>
-            კალათის გასუფთავება
-          </button>
+          <div className="clear-cart-button__helper">
+            <button className="clear-cart-button" onClick={handleClick}>
+              კალათის გასუფთავება
+            </button>
+          </div>
           <div className="cart-helper-container">
             <h2 className="total-money-header">
               ჯამური თანხა:{" "}
@@ -77,7 +79,10 @@ const Cart = () => {
               }, 0)}
               ₾
             </h2>
-            <button className="clear-cart-button" onClick={handleBuyButton}>
+            <button
+              className="clear-cart-button additional-buy"
+              onClick={handleBuyButton}
+            >
               ყიდვა
             </button>
           </div>

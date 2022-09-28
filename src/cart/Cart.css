@@ -120,4 +120,20 @@
     .cart-image {
         width: 25vw;
     }
+    .total-money-header {
+        text-align: center;
+    }
+    .clear-cart-button__helper {
+        width: 33%;
+    }
+    .cart-helper-container {
+        width: 50%;
+        align-items:center;
+    }
+    .additional-buy {
+        padding: 10px 15px;
+    }
+    .total-money-header {
+        font-size: 15px;
+    }
 }
