@@ -106,7 +106,7 @@ const App = () => {
               <Route
                 exact
                 path="/mac"
-                element={<FilteredProducts product={"Mac"} />}
+                element={<FilteredProducts product={"Macbook"} />}
               />
               <Route
                 exact
@@ -116,7 +116,7 @@ const App = () => {
               <Route
                 exact
                 path="/watch"
-                element={<FilteredProducts product={"Watch"} />}
+                element={<FilteredProducts product={"Apple Watch"} />}
               />
               <Route
                 exact

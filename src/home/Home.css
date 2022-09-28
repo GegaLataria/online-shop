@@ -83,4 +83,7 @@
         padding: 10px 20px;
         margin-bottom: -20px;
     }
+    .products-section__list__item__price {
+        font-size: 15px;
+    }
 }

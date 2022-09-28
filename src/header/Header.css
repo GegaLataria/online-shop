@@ -20,7 +20,7 @@
 .header-list__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 
 .header-list__item:hover {
@@ -33,4 +33,19 @@
 
 .header-cart-image {
     width: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    .header-list__item {
+        font-size: 12px;
+    }
+    .header-cart-image {
+        width: 50px;
+    }
+    .cart-items {
+        font-size: 15px;
+        transform: translate(-10px, 0);
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }

@@ -15,3 +15,9 @@
 .footer-list__item:hover {
     color: red;
 }
+
+@media only screen and (max-width: 768px) {
+    .footer-list__item {
+        font-size: 10px;
+    } 
+}

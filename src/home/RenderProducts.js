@@ -15,9 +15,13 @@ export default function RenderProducts({ data }) {
                 src={x.image}
                 alt={x.header}
               ></img>
-              {x.header}
+              <span className="products-section__list__item__price">
+                {x.header}
+              </span>
               <br></br>
-              {x.price}₾
+              <span className="products-section__list__item__price">
+                {x.price}₾
+              </span>
             </a>
           </div>
         );
