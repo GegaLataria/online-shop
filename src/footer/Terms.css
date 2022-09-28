@@ -3,14 +3,7 @@
     border-bottom: 2.5px solid #6f42c1;
     margin: 2vw 1vw 0vw 1vw;
     width: fit-content;
-    /* border-right: 3px solid #6f42c1;
-    animation: typing 2s steps(22) alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 375px; */
 }
-
-/* @keyframes typing {from {width: 0; }} */
 
 .terms-text {
     font-size: 2vw;
@@ -20,4 +13,11 @@
 .terms-text::first-letter {
     color: #6f42c1;
     font-size: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .terms-header {
+        font-size: 25px;
+        margin-bottom: -30px;
+    }
 }

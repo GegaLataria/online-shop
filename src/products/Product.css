@@ -34,7 +34,7 @@
 
 .product-header {
     font-size: 2.5vw;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 2px solid #6f42c1;
 }
 
 .product-image {
@@ -86,4 +86,28 @@
 .price-tag {
     font-size: 1.8vw;
     margin-left: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .product-header {
+        font-size: 25px;
+    }
+    .product-page__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .zoom-button {
+        display: none;
+    }
+    .product-image-small {
+        width: 100px;
+    }
+    .price-tag {
+        font-size: 20px;
+    }
+    .cart-button {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
 }

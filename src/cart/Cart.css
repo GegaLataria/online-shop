@@ -94,3 +94,9 @@
     color: black;
 }
 
+@media only screen and (max-width: 768px) {
+    .clear-cart-button {
+        font-size: 15px;
+        padding: 5px 10px;
+    } 
+}
