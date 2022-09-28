@@ -1,5 +1,5 @@
 .containerStyles {
-    width: 100vw;
+    width: 95vw;
     height: 38vw;
     margin: 0 auto;
 }
@@ -56,5 +56,14 @@
 
 .selectedDot {
     color: #6f42c1;
+}
+
+@media only screen and (max-width: 768px){
+    .containerStyles {
+        height: 50vw;
+    }
+    .dotStyles {
+        font-size: 25px;
+    }
 }
 
