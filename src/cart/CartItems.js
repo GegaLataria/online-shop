@@ -76,7 +76,7 @@ export default function CartItems({
                 >
                   —
                 </h2>
-                <h2>{amount}</h2>
+                <h2 className="cart-page-container__item__text">{amount}</h2>
                 <h2
                   onClick={() =>
                     exportedObject.handleClick(
@@ -92,12 +92,14 @@ export default function CartItems({
             </div>
           </div>
           <div className="cart-page-container__item">
-            <h2>{header}</h2>
-            <h2>{price}₾</h2>
+            <h2 className="cart-page-container__item__text">{header}</h2>
+            <h2 className="cart-page-container__item__text">{price}₾</h2>
           </div>
           <div className="cart-page-container__item">
-            <h2>სულ თანხა: </h2>
-            <h2>{amount * price}₾</h2>
+            <h2 className="cart-page-container__item__text">სულ თანხა: </h2>
+            <h2 className="cart-page-container__item__text">
+              {amount * price}₾
+            </h2>
           </div>
           <div className="cart-page-container__item">
             <button onClick={handleClick} className="clear-cart-button">

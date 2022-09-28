@@ -99,4 +99,25 @@
         font-size: 15px;
         padding: 5px 10px;
     } 
+    .cart-header {
+        font-size: 25px;
+    }
+    .buyText {
+        font-size: 20px;
+    }
+    .cart-page-container__item {
+        margin-left: .4vw;
+    }
+    .cart-page-container__item__text {
+        font-size: 15px;
+    }
+    .cart-numbers-button__item {
+        font-size: 15px;
+    }
+    .cart-numbers-button {
+        padding: 0 5px;
+    }
+    .cart-image {
+        width: 25vw;
+    }
 }
