@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
@@ -16,9 +16,14 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  // setTimeout(()=>{
-  //   goToNext();
-  // }, 3000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [currentIndex, slides.length]);
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);

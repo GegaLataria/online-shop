@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #6f42c1;
     padding: .5vw 1vw;
+    border-radius: .5vw;
 }
 
 .cart-items {
