@@ -52,15 +52,15 @@ const NewProduct = ({ index }) => {
         </div>
         <div className="product-page__container__column">
           <h3>Short Description:</h3>
-          <p>ეკრანის ზომა: 6.7"</p>
-          <p>შიდა მეხსიერება: 256GB</p>
-          <p>ოპერატიული მეხსიერება: 6 GB</p>
-          <p>მთავარი კამერა: 12+12+12 MP</p>
-          <p>• უფასო მიწოდება 50 ლარიდან</p>
-          <p>• მიწოდება თბილისში 1-3 სამუშაო დღე</p>
-          <p>• მიწოდება საქართველოს მასშტაბით 3-5 სამუშაო დღე</p>
-          <p>• გადახდა ნებისმიერი ბანკის ბარათით ან განვადებით</p>
-          <p>• დაბრუნება შესაძლებელია მიღებიდან 14 დღის განმავლობაში</p>
+          <p>Screen Size: 6.7"</p>
+          <p>Internal Memory: 256GB</p>
+          <p>Operational Memory: 6 GB</p>
+          <p>Main Camera: 12+12+12 MP</p>
+          <p>• Free Shipping</p>
+          <p>• Delivery time 1-3 working days</p>
+          <p>• Delivery Worldwide</p>
+          <p>• We accept: VISA, Mastercard, Paypal</p>
+          <p>• Free returns withing 14 days</p>
         </div>
       </div>
       <h2 className="price-tag">ფასი: {price}₾</h2>
