@@ -20,7 +20,7 @@ const Cart = () => {
 
   const handleBuyButton = () => {
     handleClick();
-    setBuyText("თქვენი შეკვეთა მიღებულია!");
+    setBuyText("Order is Confirmed!");
   };
 
   return (
