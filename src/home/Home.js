@@ -14,12 +14,12 @@ const Home = ({ slides }) => {
       <ImageSlider slides={slides} />
       <div className="home-container">
         <button className="home-shop-button" onClick={handleClick}>
-          იშოპინგე
+          Shop Now
         </button>
       </div>
       <div ref={ref} className="products-section">
         <div className="title-container">
-          <h2 className="products-section__title">პოპულარული პროდუქცია</h2>
+          <h2 className="products-section__title">Featured Products</h2>
         </div>
         <RenderProducts data={data} />
       </div>

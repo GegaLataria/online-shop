@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="header-list">
         <a href="/" className="header-list__item">
-          მთავარი
+          Home
         </a>
         <a href="/iphone" className="header-list__item">
           Iphone

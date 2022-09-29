@@ -96,14 +96,14 @@ export default function CartItems({
             <h2 className="cart-page-container__item__text">{price}₾</h2>
           </div>
           <div className="cart-page-container__item">
-            <h2 className="cart-page-container__item__text">სულ თანხა: </h2>
+            <h2 className="cart-page-container__item__text">Price: </h2>
             <h2 className="cart-page-container__item__text">
               {amount * price}₾
             </h2>
           </div>
           <div className="cart-page-container__item">
             <button onClick={handleClick} className="clear-cart-button">
-              წაშლა
+              Remove
             </button>
           </div>
         </div>

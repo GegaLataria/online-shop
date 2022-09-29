@@ -5,16 +5,16 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-list">
         <a href="/terms-and-conditions" className="footer-list__item">
-          წესები და პირობები
+          Terms and Conditions
         </a>
         <a href="/contact" className="footer-list__item">
-          კონტაქტი
+          Contact
         </a>
         <a href="/partners" className="footer-list__item">
-          პარტნიორები
+          Partners
         </a>
         <a href="/about-us" className="footer-list__item">
-          ჩვენ შესახებ
+          About Us
         </a>
       </div>
     </div>

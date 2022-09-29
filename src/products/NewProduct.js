@@ -51,7 +51,7 @@ const NewProduct = ({ index }) => {
           </button>
         </div>
         <div className="product-page__container__column">
-          <h3>მოკლე აღწერა:</h3>
+          <h3>Short Description:</h3>
           <p>ეკრანის ზომა: 6.7"</p>
           <p>შიდა მეხსიერება: 256GB</p>
           <p>ოპერატიული მეხსიერება: 6 GB</p>

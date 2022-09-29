@@ -1,7 +1,7 @@
 const BuyButton = () => {
   return (
     <a href="/cart" className="clear-cart-button">
-      ყიდვა
+      Buy
     </a>
   );
 };

@@ -25,19 +25,19 @@ const Cart = () => {
 
   return (
     <div>
-      <h2 className="cart-header">კალათა</h2>
+      <h2 className="cart-header">Cart</h2>
 
       {!buyText ? (
         <div className="order-container">
           {value.cartItems ? (
             <h2 className="buyText black">
-              თქვენ გაქვთ {value.cartItems} ნივთი კალათაში
+              You have {value.cartItems} items in Cart
             </h2>
           ) : (
             <div>
-              <h2 className="buyText black">თქვენი კალათა ცარიელია</h2>
+              <h2 className="buyText black">Cart is Empty</h2>
               <a className="clear-cart-button" href="/">
-                გააგრძელე შოპინგი
+                Continue Shopping
               </a>
             </div>
           )}
@@ -46,7 +46,7 @@ const Cart = () => {
         <div className="order-container">
           <div className="buyText">{buyText}</div>
           <a className="clear-cart-button" href="/">
-            გააგრძელე შოპინგი
+            Continue Shopping
           </a>
         </div>
       )}
@@ -68,12 +68,12 @@ const Cart = () => {
         <div className="cart-items-container">
           <div className="clear-cart-button__helper">
             <button className="clear-cart-button" onClick={handleClick}>
-              კალათის გასუფთავება
+              Clear Cart
             </button>
           </div>
           <div className="cart-helper-container">
             <h2 className="total-money-header">
-              ჯამური თანხა:{" "}
+              Total:{" "}
               {value.products.reduce(function (prev, cur) {
                 return prev + cur.amount * cur.price;
               }, 0)}
@@ -83,7 +83,7 @@ const Cart = () => {
               className="clear-cart-button additional-buy"
               onClick={handleBuyButton}
             >
-              ყიდვა
+              Buy
             </button>
           </div>
         </div>

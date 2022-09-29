@@ -53,7 +53,7 @@ const CartButton = ({ header, image, price, index }) => {
         onClick={() => handleClick({ header, image, price, index }, value)}
         className="cart-button"
       >
-        კალათაში დამატება
+        Add To Cart
       </button>
     </div>
   );

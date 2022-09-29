@@ -126,22 +126,22 @@ const App = () => {
               <Route
                 exact
                 path="/terms-and-conditions"
-                element={<Terms header={"წესები და პირობები"} />}
+                element={<Terms header={"Terms and Conditions"} />}
               />
               <Route
                 exact
                 path="/contact"
-                element={<Terms header={"კონტაქტი"} />}
+                element={<Terms header={"Contact"} />}
               />
               <Route
                 exact
                 path="/partners"
-                element={<Terms header={"პარტნიორები"} />}
+                element={<Terms header={"Partners"} />}
               />
               <Route
                 exact
                 path="/about-us"
-                element={<Terms header={"ჩვენ შესახებ"} />}
+                element={<Terms header={"About Us"} />}
               />
               <Route path="/cart" element={<Cart />} />
             </Routes>
