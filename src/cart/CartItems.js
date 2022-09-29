@@ -10,8 +10,6 @@ export default function CartItems({
   value,
 }) {
   const handleClick = () => {
-    console.log(index);
-    console.log("cart-value-products", value.products);
     value.setCartItems(value.cartItems - amount);
     let id;
     value.products.map((x, index) => {
@@ -20,7 +18,6 @@ export default function CartItems({
       }
       return id;
     });
-    console.log(id);
     value.products.splice(id, 1);
     value.setProducts(value.products);
     window.localStorage.setItem(

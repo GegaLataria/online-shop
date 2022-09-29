@@ -4,7 +4,6 @@ import data from "../data";
 
 const handleClick = ({ header, image, price, index }, value) => {
   let product = JSON.parse(localStorage.getItem("product"));
-  console.log("valueeee", value);
 
   if (product.header) {
     value.setProducts(product);
@@ -13,7 +12,6 @@ const handleClick = ({ header, image, price, index }, value) => {
   const exist = value.products.find((x) => x.id === index);
 
   if (exist) {
-    console.log("already exist", value.products);
     value.setCartItems(value.cartItems + 1);
     value.setProducts(
       value.products.map((x) =>
@@ -22,7 +20,6 @@ const handleClick = ({ header, image, price, index }, value) => {
     );
     value.setCartItems(value.cartItems + 1);
   } else {
-    console.log("val.prods", value.products);
     value.setProducts([...value.products, { ...data[index], amount: 1 }]);
     value.setCartItems(value.cartItems + 1);
     value.setCartItems(value.cartItems + 1);
