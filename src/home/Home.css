@@ -44,6 +44,10 @@
     margin-bottom: 1.25vw;
 }
 
+.products-section__list__item:hover {
+    transform: scale(1.05);
+}
+
 .title-container {
     display: flex;
     justify-content: center;
