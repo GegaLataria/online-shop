@@ -14,6 +14,8 @@ import mac2 from "./photos/mac-2.jpg";
 import airpods3 from "./photos/airpods-3-2.jpg";
 import aipordspro2 from "./photos/airpods-pro-2.jpg";
 import appwatch8 from "./photos/apple-watch-8-2.jpg";
+import homepod2 from "./photos/homepod-mini-2.jpg";
+import case2 from "./photos/case-2.jpg";
 
 const data = [
   {
@@ -52,7 +54,7 @@ const data = [
     id: 4,
     header: "Homepod Mini Acc",
     image: homepod,
-    image2: image2,
+    image2: homepod2,
     price: 199,
     amount: 0,
   },
@@ -83,8 +85,8 @@ const data = [
   {
     id: 8,
     header: "Apple 14 Pro Case Acc",
-    image: iphoneCase,
-    image2: image2,
+    image: case2,
+    image2: iphoneCase,
     price: 129,
     amount: 0,
   },
