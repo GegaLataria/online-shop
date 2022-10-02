@@ -47,6 +47,7 @@
 .zoomed-image {
     width: 60vw;
     height: auto;
+    max-height: 35vw;
 }
 
 .zoom-button {
