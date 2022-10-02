@@ -6,6 +6,7 @@ import RenderProducts from "./RenderProducts";
 
 const Home = ({ slides }) => {
   const ref = useRef(null);
+  
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
