@@ -11,6 +11,9 @@ import airpodsPro from "./photos/airpods-pro.jpg";
 import ultra2 from "./photos/ultra-2.jpg";
 import ip14 from "./photos/iphone14-2.jpg";
 import mac2 from "./photos/mac-2.jpg";
+import airpods3 from "./photos/airpods-3-2.jpg";
+import aipordspro2 from "./photos/airpods-pro-2.jpg";
+import appwatch8 from "./photos/apple-watch-8-2.jpg";
 
 const data = [
   {
@@ -41,7 +44,7 @@ const data = [
     id: 3,
     header: "Apple Airpods 3",
     image: airpod,
-    image2: image2,
+    image2: airpods3,
     price: 579,
     amount: 0,
   },
@@ -57,7 +60,7 @@ const data = [
     id: 5,
     header: "Apple Watch 8",
     image: appleWatch8,
-    image2: image2,
+    image2: appwatch8,
     price: 1599,
     amount: 0,
   },
@@ -73,7 +76,7 @@ const data = [
     id: 7,
     header: "Apple Airpods Pro 2",
     image: airpodsPro,
-    image2: image2,
+    image2: aipordspro2,
     price: 799,
     amount: 0,
   },
