@@ -8,6 +8,7 @@ import appleWatch8 from "./photos/apple-8.jpg";
 import iphone14 from "./photos/iphone14.jpg";
 import iphoneCase from "./photos/case.jpg";
 import airpodsPro from "./photos/airpods-pro.jpg";
+import ultra2 from "./photos/ultra-2.jpg";
 
 const data = [
   {
@@ -22,7 +23,7 @@ const data = [
     id: 1,
     header: "Apple Watch Ultra",
     image: imageWatch,
-    image2: image2,
+    image2: ultra2,
     price: 2999,
     amount: 0,
   },
