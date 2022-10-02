@@ -9,6 +9,8 @@ import iphone14 from "./photos/iphone14.jpg";
 import iphoneCase from "./photos/case.jpg";
 import airpodsPro from "./photos/airpods-pro.jpg";
 import ultra2 from "./photos/ultra-2.jpg";
+import ip14 from "./photos/iphone14-2.jpg";
+import mac2 from "./photos/mac-2.jpg";
 
 const data = [
   {
@@ -29,9 +31,9 @@ const data = [
   },
   {
     id: 2,
-    header: "Macbook M2",
+    header: "Macbook Air M2",
     image: macbook,
-    image2: image2,
+    image2: mac2,
     price: 3999,
     amount: 0,
   },
@@ -63,7 +65,7 @@ const data = [
     id: 6,
     header: "Iphone 14",
     image: iphone14,
-    image2: image2,
+    image2: ip14,
     price: 3099,
     amount: 0,
   },
