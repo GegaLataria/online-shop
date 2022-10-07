@@ -43,11 +43,7 @@ export default function OrderDetails() {
             placeholder="Address"
             required
           ></input>
-          <input
-            className="form-container__list__item submit"
-            type={"submit"}
-            placeholder="Submit"
-          ></input>
+          <button className="clear-cart-button">Submit</button>
         </form>
       </div>
     </div>

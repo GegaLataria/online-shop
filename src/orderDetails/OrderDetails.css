@@ -2,6 +2,7 @@
     background-color: rgba(110, 66, 193, .4);
     padding-top: 2vw;
     margin-bottom: 3vw;
+    border-radius: .5vw;
 }
 
 .form-container__list {
