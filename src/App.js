@@ -11,6 +11,7 @@ import image3 from "./photos/image-3.jpg";
 import image4 from "./photos/image-4.jpg";
 import FilteredProducts from "./products/FilteredProducts";
 import Terms from "./footer/Terms";
+import Buy from "./buy/Buy";
 
 export const Context = React.createContext();
 
@@ -144,6 +145,7 @@ const App = () => {
                 element={<Terms header={"About Us"} />}
               />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/buy" element={<Buy />} />
             </Routes>
           </Suspense>
           <Footer />

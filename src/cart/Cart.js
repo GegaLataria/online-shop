@@ -79,12 +79,9 @@ const Cart = () => {
               }, 0)}
               ₾
             </h2>
-            <button
-              className="clear-cart-button additional-buy"
-              onClick={handleBuyButton}
-            >
-              Buy
-            </button>
+            <a href="/buy">
+              <button className="clear-cart-button additional-buy">Buy</button>
+            </a>
           </div>
         </div>
       ) : null}
