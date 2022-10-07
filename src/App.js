@@ -11,7 +11,7 @@ import image3 from "./photos/image-3.jpg";
 import image4 from "./photos/image-4.jpg";
 import FilteredProducts from "./products/FilteredProducts";
 import Terms from "./footer/Terms";
-import Buy from "./buy/Buy";
+import Buy from "./orderDetails/OrderDetails";
 
 export const Context = React.createContext();
 
