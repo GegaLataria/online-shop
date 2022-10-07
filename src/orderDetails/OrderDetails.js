@@ -64,7 +64,9 @@ export default function OrderDetails() {
                 required
                 placeholder="Address"
               ></input>
-              <button className="clear-cart-button">Submit</button>
+              <button className="clear-cart-button submit-button">
+                Submit
+              </button>
             </form>
           </div>
         </div>

@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2vw;
 }
 
 .form-container__list__item {
@@ -28,5 +29,25 @@
 
 .submit {
     width: 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        height: 60vh;
+    }
+
+    .form-container__list {
+        margin-top: 15vw;
+    }
+
+    .form-container__list__item {
+        font-size: 14px;
+        width: 50vw;
+        height: 3vh;
+    }
+    .submit-button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }
 
