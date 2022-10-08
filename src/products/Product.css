@@ -24,7 +24,7 @@
 .product-image-small {
     border-radius: .5vw;
     width: 150px;
-    height: auto;
+    height: 100px;
     margin-bottom: 1vw;
     cursor: pointer;
 }
@@ -113,12 +113,13 @@
     }
     .product-image-small {
         width: 150px;
+        height: 80px;
     }
     .price-tag {
         font-size: 20px;
     }
     .cart-button {
-        font-size: 15px;
+        font-size: 18px;
         padding: 5px 10px;
     }
 }
