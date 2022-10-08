@@ -84,7 +84,7 @@
 }
 
 .buyText {
-    font-size: 3vw;
+    font-size: 5vw;
     color: rgb(39, 209, 39);
     text-align: center;
     margin-bottom: 5vw;
@@ -92,6 +92,18 @@
 
 .black {
     color: black;
+}
+
+.cart-remove-button {
+    background-color: #6f42c1;
+    border: none;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    color: #fff;
+    border-radius: .5vw;
+    margin-bottom: 2vw;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,7 +115,7 @@
         font-size: 25px;
     }
     .buyText {
-        font-size: 20px;
+        font-size: 30px;
     }
     .cart-page-container__item {
         margin-left: .4vw;
@@ -135,5 +147,9 @@
     }
     .total-money-header {
         font-size: 15px;
+    }
+    .cart-remove-button {
+        font-size: 15px;
+        padding: 5px 10px;
     }
 }

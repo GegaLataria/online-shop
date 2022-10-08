@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 768px){
     .header-list__item {
-        font-size: 12px;
+        font-size: 12.5px;
     }
     .header-cart-image {
         width: 50px;

@@ -99,7 +99,7 @@ export default function CartItems({
             </h2>
           </div>
           <div className="cart-page-container__item">
-            <button onClick={handleClick} className="clear-cart-button">
+            <button onClick={handleClick} className="cart-remove-button">
               Remove
             </button>
           </div>
