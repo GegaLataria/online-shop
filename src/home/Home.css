@@ -76,12 +76,12 @@
         font-size: 23px;
     }
     .products-section__list__item {
-        width: 40%;
-        margin-bottom: 2vw;
+        width: 70%;
+        margin-bottom: 4vw;
         padding-bottom: 0;
     }
     .products-section__list__item__image {
-        height: 95px;
+        height: 140px;
     }
     .home-shop-button {
         margin-top: 30px;
