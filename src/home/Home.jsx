@@ -6,11 +6,11 @@ import RenderProducts from "./RenderProducts";
 import LoadingBar from "./LoadingBar";
 
 const Home = ({ slides }) => {
-  const [val, setVal] = useState(10);
+  const [val, setVal] = useState(5);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setVal(val + 10);
-    }, 500);
+      setVal(val + 30);
+    }, 600);
     return () => clearTimeout(timer);
   }, [val]);
 
@@ -21,7 +21,7 @@ const Home = ({ slides }) => {
   };
   return (
     <div>
-      {val < 100 ? (
+      {val <= 100 ? (
         <LoadingBar width={val} />
       ) : (
         <div>
