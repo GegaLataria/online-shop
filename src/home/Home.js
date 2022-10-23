@@ -14,27 +14,30 @@ const Home = ({ slides }) => {
   }, [val]);
 
   const ref = useRef(null);
-  
+
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div>
-      {val<100?<LoadingBar width={val}/>:
-      <div>
-        <ImageSlider slides={slides} />
-        <div className="home-container">
-          <button className="home-shop-button" onClick={handleClick}>
-            Shop Now
-          </button>
-        </div>
-        <div ref={ref} className="products-section">
-          <div className="title-container">
-            <h2 className="products-section__title">Featured Products</h2>
+      {val < 100 ? (
+        <LoadingBar width={val} />
+      ) : (
+        <div>
+          <ImageSlider slides={slides} />
+          <div className="home-container">
+            <button className="home-shop-button" onClick={handleClick}>
+              Shop Now
+            </button>
           </div>
-          <RenderProducts data={data} />
+          <div ref={ref} className="products-section">
+            <div className="title-container">
+              <h2 className="products-section__title">Featured Products</h2>
+            </div>
+            <RenderProducts data={data} />
+          </div>
         </div>
-      </div>}
+      )}
     </div>
   );
 };

@@ -1,9 +1,9 @@
-/* body {
+.loader {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  } */
+  }
   input {
     border-radius: 20px;
     width: 70px;
