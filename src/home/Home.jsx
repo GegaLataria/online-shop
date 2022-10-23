@@ -8,9 +8,10 @@ import LoadingBar from "./LoadingBar";
 const Home = ({ slides }) => {
   const [val, setVal] = useState(10);
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setVal(val + 10);
     }, 500);
+    return () => clearTimeout(timer);
   }, [val]);
 
   const ref = useRef(null);
