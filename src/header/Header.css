@@ -25,6 +25,7 @@
 
 .header-list__item:hover {
     color: red;
+    transition: .5s;
 }
 
 .header-list__cart {
