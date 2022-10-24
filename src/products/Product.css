@@ -119,6 +119,7 @@
     .product-image-small {
         width: 150px;
         height: 80px;
+        margin-left: 10px;
     }
     .price-tag {
         font-size: 20px;
