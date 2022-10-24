@@ -12,6 +12,7 @@ import image4 from "./photos/image-4.jpg";
 import FilteredProducts from "./products/FilteredProducts";
 import Terms from "./footer/Terms";
 import Buy from "./orderDetails/OrderDetails";
+import "./App.css";
 
 export const Context = React.createContext();
 
