@@ -1,6 +1,7 @@
 .footer-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgba(110, 66, 193, .8);
     padding: 1.5vw 3vw;
     border-radius: .5vw;
@@ -18,6 +19,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .footer-list {
+        height: 35px;
+    }
     .footer-list__item {
         font-size: 14px;
     } 
